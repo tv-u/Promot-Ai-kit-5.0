@@ -1,0 +1,39 @@
+name = "linktroo"
+main = "src/worker.js"
+compatibility_date = "2026-08-15"
+compatibility_flags = ["nodejs_compat"]
+
+# Cloudflare D1 Database
+[[d1_databases]]
+binding = "DB"
+database_name = "u-tv"                           # from your list (was "linktroo-db")
+database_id = "16127660-ca97-4972-a7d1-97e9620b1271"  # from #35
+
+# Cloudflare KV Namespace
+[[kv_namespaces]]
+binding = "KV"
+id = "de9fa6e9800a45e9a5d5ad8c24cbe3fd"          # from #34
+
+# Cloudflare R2 Bucket
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "linktroo-images"
+
+# Environment Variables
+[vars]
+SUPABASE_URL = "https://hofsjokjvcnmsrddqpdm.supabase.co"    # from #1 / #5
+SUPABASE_ANON_KEY = "sb_publishable_XserVyDENJpGysyz_VW-QA_LOilrstm"   # from #2
+CLOUDINARY_CLOUD_NAME = "smcdd3nw"               # from #33
+CLOUDINARY_API_KEY = "428951764231939"           # from #33
+CLOUDINARY_API_SECRET = "your-cloudinary-secret" # ❗ not provided in your list – set via `wrangler secret put CLOUDINARY_API_SECRET`
+APP_URL = "https://linktroo.pages.dev"
+
+# Secrets (use: wrangler secret put SECRET_NAME)
+# SUPABASE_SERVICE_ROLE_KEY   – available as SUPABASE_SECRET_KEY (#3) but keep as secret
+# CLOUDINARY_API_SECRET       – set separately
+# ADMIN_API_KEY               – not in list
+# JWT_SECRET                  – not in list
+
+# Cloudflare Pages
+[site]
+bucket = "./public"

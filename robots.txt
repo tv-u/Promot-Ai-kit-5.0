@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Allow: /sitemap.xml
+Allow: /api/public/
+Disallow: /dashboard
+Disallow: /api/auth/
+Disallow: /api/admin/
+
+Sitemap: https://linktroo.pages.dev/sitemap.xml
+
+# LINKTROO Bio Link Generator - Free Tool
+# Enterprise-level Linktree Alternative
+# 134+ Real Working Features
+# https://linktroo.pages.dev

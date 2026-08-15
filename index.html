@@ -1,0 +1,2838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+
+<!-- ═══ DYNAMIC SEO META (Updated by JS) ═══ -->
+<title>LINKTROO — Bio Link Generator Free Tool | Unlimited Links, Zero Cost</title>
+<meta name="description" content="Create unlimited bio links for free. The most advanced Linktree alternative with 134+ features, 3D buttons, premium themes, and real analytics.">
+<meta name="keywords" content="bio link generator free, unlimited links in bio, linktree alternative free, free bio link tool, social link page free, instagram bio link free, tiktok bio link free, youtube bio link free, multiple links in bio free, link in bio tool unlimited, free link page creator, bio link website free, social media link hub free, free linktree clone, bio link maker free, add unlimited links to bio, free link sharing tool, social links aggregator free, bio page generator free, link in bio no limit, free bio page builder, multi link bio free, link hub free tool, bio link platform free, free social link tree, instagram multiple links free, free bio link service, link landing page free, social bio links free, free link in bio generator 2026">
+<meta name="author" content="LINKTROO">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
+<meta name="bingbot" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LINKTROO">
+<meta property="og:title" content="LINKTROO — Bio Link Generator Free Tool">
+<meta property="og:description" content="Create unlimited bio links for free. 134+ features, 3D buttons, premium dark themes.">
+<meta property="og:image" content="https://linktroo.pages.dev/og-image.jpg">
+<meta property="og:url" content="https://linktroo.pages.dev">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@linktroo">
+<meta name="twitter:title" content="LINKTROO — Bio Link Generator Free Tool">
+<meta name="twitter:description" content="Create unlimited bio links for free. The most advanced Linktree alternative.">
+<meta name="twitter:image" content="https://linktroo.pages.dev/og-image.jpg">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://linktroo.pages.dev">
+
+<!-- PWA -->
+<link rel="manifest" href="/manifest.json">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect fill='%23ff0080' width='192' height='192' rx='48'/%3E%3Ctext x='96' y='120' font-size='100' text-anchor='middle' fill='white' font-family='Arial'%3EL%3C/text%3E%3C/svg%3E">
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://api.qrserver.com">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   LINKTROO — Global CSS Reset & Variables
+   ═══════════════════════════════════════════════════════════════ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+:root{
+  --pink:#ff0080;--pink-glow:#ff008040;--green:#00ff88;--green-glow:#00ff8840;
+  --black:#0a0a0a;--black-light:#1a1a1a;--black-lighter:#2a2a2a;--white:#ffffff;
+  --gray:#888888;--gray-dark:#555555;--accent:var(--pink);--secondary:var(--green);
+  --font-main:'Inter',system-ui,-apple-system,sans-serif;
+  --font-display:'Orbitron',sans-serif;--radius:16px;--radius-sm:8px;
+  --shadow-3d:0 8px 0 #880044,0 8px 20px rgba(255,0,128,0.3),0 0 40px rgba(255,0,128,0.1);
+  --shadow-glow:0 0 20px var(--pink-glow),0 0 40px var(--pink-glow),0 0 80px rgba(255,0,128,0.05);
+  --transition:all 0.3s cubic-bezier(0.4,0,0.2,1);
+  --sidebar-width:280px;--header-height:64px;
+}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{font-family:var(--font-main);background:var(--black);color:var(--white);min-height:100vh;overflow-x:hidden;line-height:1.6}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--black)}::-webkit-scrollbar-thumb{background:var(--pink);border-radius:3px}
+::selection{background:var(--pink);color:var(--white)}
+
+/* ═══ ANIMATIONS ═══ */
+@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeInScale{from{opacity:0;transform:scale(0.9)}to{opacity:1;transform:scale(1)}}
+@keyframes slideInLeft{from{opacity:0;transform:translateX(-30px)}to{opacity:1;transform:translateX(0)}}
+@keyframes slideInRight{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:translateX(0)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,0,128,0.4)}50%{box-shadow:0 0 0 15px rgba(255,0,128,0)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+@keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes typewriter{from{width:0}to{width:100%}}
+@keyframes blink{50%{border-color:transparent}}
+@keyframes particle{0%{transform:translateY(0) rotate(0deg);opacity:1}100%{transform:translateY(-100vh) rotate(720deg);opacity:0}}
+@keyframes glowPulse{0%,100%{filter:brightness(1)}50%{filter:brightness(1.3)}}
+@keyframes borderGlow{0%,100%{border-color:rgba(255,0,128,0.3)}50%{border-color:rgba(255,0,128,0.8)}}
+
+.animate-fadeIn{animation:fadeIn 0.6s ease-out forwards}
+.animate-slideInLeft{animation:slideInLeft 0.6s ease-out forwards}
+.animate-slideInRight{animation:slideInRight 0.6s ease-out forwards}
+.animate-float{animation:float 3s ease-in-out infinite}
+.animate-pulse-glow{animation:pulse 2s infinite}
+.animate-shimmer{background:linear-gradient(90deg,transparent,rgba(255,0,128,0.1),transparent);background-size:200% 100%;animation:shimmer 2s infinite}
+
+/* ═══ PARTICLE BACKGROUND ═══ */
+#particles{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:hidden}
+.particle{position:absolute;width:4px;height:4px;background:var(--pink);border-radius:50%;opacity:0.3;animation:particle linear infinite}
+
+/* ═══ LAYOUT ═══ */
+.app{position:relative;z-index:1;min-height:100vh}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+.container-narrow{max-width:800px;margin:0 auto;padding:0 20px}
+.container-wide{max-width:1400px;margin:0 auto;padding:0 20px}
+
+/* ═══ BUTTONS ═══ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 32px;border-radius:var(--radius-sm);border:none;font-family:var(--font-main);font-size:15px;font-weight:600;cursor:pointer;transition:var(--transition);text-decoration:none;position:relative;overflow:hidden}
+.btn-primary{background:linear-gradient(135deg,var(--pink),#ff44aa);color:var(--white);box-shadow:var(--shadow-3d);transform:translateY(0)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 0 #880044,0 10px 30px rgba(255,0,128,0.4),0 0 60px rgba(255,0,128,0.15)}
+.btn-primary:active{transform:translateY(4px);box-shadow:0 4px 0 #880044,0 4px 10px rgba(255,0,128,0.3)}
+.btn-secondary{background:linear-gradient(135deg,var(--green),#44ffaa);color:var(--black);box-shadow:0 8px 0 #008844,0 8px 20px rgba(0,255,136,0.3)}
+.btn-secondary:hover{transform:translateY(-2px);box-shadow:0 10px 0 #008844,0 10px 30px rgba(0,255,136,0.4)}
+.btn-secondary:active{transform:translateY(4px);box-shadow:0 4px 0 #008844}
+.btn-ghost{background:transparent;border:2px solid var(--pink);color:var(--pink)}
+.btn-ghost:hover{background:var(--pink);color:var(--white);box-shadow:var(--shadow-glow)}
+.btn-dark{background:var(--black-light);color:var(--white);border:1px solid var(--black-lighter)}
+.btn-dark:hover{border-color:var(--pink);box-shadow:var(--shadow-glow)}
+.btn-sm{padding:10px 20px;font-size:13px}
+.btn-lg{padding:18px 40px;font-size:17px;border-radius:var(--radius)}
+.btn-icon{width:44px;height:44px;padding:0;border-radius:50%}
+.btn:disabled{opacity:0.5;cursor:not-allowed;transform:none!important;box-shadow:none!important}
+
+/* 3D Button Styles for Public Profile */
+.btn-3d{display:block;width:100%;padding:16px 24px;margin:12px 0;background:linear-gradient(135deg,var(--pink),#ff44aa);color:var(--white);text-align:center;text-decoration:none;border-radius:var(--radius-sm);font-weight:600;font-size:15px;position:relative;transform:translateY(0);box-shadow:0 6px 0 #880044,0 6px 20px rgba(255,0,128,0.3),inset 0 1px 0 rgba(255,255,255,0.2);transition:var(--transition);border:none;cursor:pointer}
+.btn-3d:hover{transform:translateY(-2px);box-shadow:0 8px 0 #880044,0 8px 30px rgba(255,0,128,0.4),inset 0 1px 0 rgba(255,255,255,0.3)}
+.btn-3d:active{transform:translateY(4px);box-shadow:0 2px 0 #880044,0 2px 10px rgba(255,0,128,0.3)}
+.btn-3d.outline{background:transparent;border:2px solid var(--pink);box-shadow:0 6px 0 rgba(255,0,128,0.3),0 6px 20px rgba(255,0,128,0.1);color:var(--pink)}
+.btn-3d.outline:hover{background:var(--pink);color:var(--white)}
+.btn-3d.green{background:linear-gradient(135deg,var(--green),#44ffaa);box-shadow:0 6px 0 #008844,0 6px 20px rgba(0,255,136,0.3);color:var(--black)}
+.btn-3d.green:hover{box-shadow:0 8px 0 #008844,0 8px 30px rgba(0,255,136,0.4)}
+.btn-3d.pill{border-radius:50px}
+.btn-3d.square{border-radius:4px}
+
+/* ═══ CARDS ═══ */
+.card{background:var(--black-light);border:1px solid var(--black-lighter);border-radius:var(--radius);padding:24px;transition:var(--transition);position:relative;overflow:hidden}
+.card:hover{border-color:rgba(255,0,128,0.3);box-shadow:var(--shadow-glow)}
+.card-glow::before{content:'';position:absolute;top:-2px;left:-2px;right:-2px;bottom:-2px;background:linear-gradient(45deg,var(--pink),var(--green),var(--pink));border-radius:var(--radius);z-index:-1;opacity:0;transition:var(--transition);filter:blur(8px)}
+.card-glow:hover::before{opacity:0.5}
+
+/* ═══ FORMS ═══ */
+.form-group{margin-bottom:20px}
+.form-label{display:block;margin-bottom:8px;font-size:13px;font-weight:600;color:var(--gray);text-transform:uppercase;letter-spacing:0.5px}
+.form-input{width:100%;padding:14px 18px;background:var(--black);border:2px solid var(--black-lighter);border-radius:var(--radius-sm);color:var(--white);font-family:var(--font-main);font-size:15px;transition:var(--transition);outline:none}
+.form-input:focus{border-color:var(--pink);box-shadow:0 0 0 3px var(--pink-glow)}
+.form-input::placeholder{color:var(--gray-dark)}
+.form-textarea{min-height:120px;resize:vertical}
+.form-select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23888'%3E%3Cpath d='M6 9L1 4h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:40px}
+.form-color{width:60px;height:44px;padding:4px;border-radius:var(--radius-sm);border:2px solid var(--black-lighter);cursor:pointer;background:var(--black)}
+
+/* ═══ BADGES ═══ */
+.badge{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px}
+.badge-pink{background:rgba(255,0,128,0.15);color:var(--pink);border:1px solid rgba(255,0,128,0.3)}
+.badge-green{background:rgba(0,255,136,0.15);color:var(--green);border:1px solid rgba(0,255,136,0.3)}
+.badge-gold{background:rgba(255,200,0,0.15);color:#ffcc00;border:1px solid rgba(255,200,0,0.3)}
+
+/* ═══ NAVBAR ═══ */
+.navbar{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--header-height);background:rgba(10,10,10,0.8);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.05);transition:var(--transition)}
+.navbar-inner{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 24px;max-width:1400px;margin:0 auto}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--white)}
+.nav-logo-icon{width:40px;height:40px;background:linear-gradient(135deg,var(--pink),#ff44aa);border-radius:12px;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:20px;box-shadow:0 0 20px rgba(255,0,128,0.3)}
+.nav-logo-text{font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:1px}
+.nav-logo-text span{color:var(--pink)}
+.nav-links{display:flex;align-items:center;gap:8px}
+.nav-link{padding:8px 16px;border-radius:var(--radius-sm);color:var(--gray);text-decoration:none;font-size:14px;font-weight:500;transition:var(--transition)}
+.nav-link:hover{color:var(--white);background:rgba(255,255,255,0.05)}
+.nav-link.active{color:var(--pink);background:rgba(255,0,128,0.1)}
+.nav-cta{padding:10px 24px;background:linear-gradient(135deg,var(--pink),#ff44aa);color:var(--white);border-radius:var(--radius-sm);text-decoration:none;font-size:14px;font-weight:600;box-shadow:var(--shadow-3d)}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 10px 0 #880044,0 10px 30px rgba(255,0,128,0.4)}
+
+/* ═══ SIDEBAR (Dashboard) ═══ */
+.sidebar{position:fixed;top:var(--header-height);left:0;bottom:0;width:var(--sidebar-width);background:var(--black-light);border-right:1px solid var(--black-lighter);z-index:90;overflow-y:auto;padding:20px 0;transform:translateX(0);transition:transform 0.3s ease}
+.sidebar-hidden{transform:translateX(-100%)}
+.sidebar-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:85;opacity:0;pointer-events:none;transition:opacity 0.3s}
+.sidebar-overlay.active{opacity:1;pointer-events:auto}
+.sidebar-item{display:flex;align-items:center;gap:14px;padding:14px 24px;color:var(--gray);text-decoration:none;font-size:14px;font-weight:500;transition:var(--transition);border-left:3px solid transparent;cursor:pointer}
+.sidebar-item:hover{color:var(--white);background:rgba(255,255,255,0.03);border-left-color:rgba(255,0,128,0.3)}
+.sidebar-item.active{color:var(--pink);background:rgba(255,0,128,0.05);border-left-color:var(--pink)}
+.sidebar-item svg{width:20px;height:20px;flex-shrink:0}
+.sidebar-divider{margin:16px 24px;height:1px;background:var(--black-lighter)}
+.sidebar-section-title{padding:8px 24px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--gray-dark)}
+
+/* ═══ MAIN CONTENT AREA ═══ */
+.main-content{margin-left:var(--sidebar-width);margin-top:var(--header-height);min-height:calc(100vh - var(--header-height));padding:32px;transition:margin-left 0.3s}
+.main-content-full{margin-left:0}
+
+/* ═══ PAGE HEADER ═══ */
+.page-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;flex-wrap:wrap;gap:16px}
+.page-title{font-size:28px;font-weight:800;background:linear-gradient(135deg,var(--white),var(--gray));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.page-subtitle{color:var(--gray);font-size:14px;margin-top:4px}
+
+/* ═══ GRID SYSTEM ═══ */
+.grid{display:grid;gap:24px}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+.grid-5{grid-template-columns:repeat(5,1fr)}
+@media(max-width:1200px){.grid-4,.grid-5{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:900px){.grid-3,.grid-4,.grid-5{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.grid-2,.grid-3,.grid-4,.grid-5{grid-template-columns:1fr}}
+
+/* ═══ STATS CARDS ═══ */
+.stat-card{padding:24px;border-radius:var(--radius);background:var(--black-light);border:1px solid var(--black-lighter);position:relative;overflow:hidden}
+.stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pink),var(--green))}
+.stat-value{font-size:36px;font-weight:800;color:var(--white);margin-bottom:4px}
+.stat-label{font-size:13px;color:var(--gray);text-transform:uppercase;letter-spacing:0.5px}
+.stat-change{display:inline-flex;align-items:center;gap:4px;margin-top:8px;font-size:13px;font-weight:600}
+.stat-change.up{color:var(--green)}.stat-change.down{color:#ff4444}
+
+/* ═══ TABS ═══ */
+.tabs{display:flex;gap:4px;padding:4px;background:var(--black-light);border-radius:var(--radius-sm);border:1px solid var(--black-lighter);margin-bottom:24px;overflow-x:auto}
+.tab{padding:10px 20px;border-radius:var(--radius-sm);border:none;background:transparent;color:var(--gray);font-family:var(--font-main);font-size:14px;font-weight:500;cursor:pointer;transition:var(--transition);white-space:nowrap}
+.tab:hover{color:var(--white)}
+.tab.active{background:linear-gradient(135deg,var(--pink),#ff44aa);color:var(--white);box-shadow:0 4px 15px rgba(255,0,128,0.3)}
+
+/* ═══ MODAL ═══ */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.8);backdrop-filter:blur(8px);z-index:200;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity 0.3s}
+.modal-overlay.active{opacity:1;pointer-events:auto}
+.modal{background:var(--black-light);border:1px solid var(--black-lighter);border-radius:var(--radius);width:100%;max-width:560px;max-height:90vh;overflow-y:auto;transform:scale(0.95);transition:transform 0.3s;box-shadow:0 25px 50px rgba(0,0,0,0.5)}
+.modal-overlay.active .modal{transform:scale(1)}
+.modal-header{padding:24px 24px 0;display:flex;align-items:center;justify-content:space-between}
+.modal-title{font-size:20px;font-weight:700}
+.modal-close{width:36px;height:36px;border-radius:50%;border:none;background:var(--black);color:var(--gray);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:var(--transition)}
+.modal-close:hover{background:#ff4444;color:var(--white)}
+.modal-body{padding:24px}
+.modal-footer{padding:0 24px 24px;display:flex;justify-content:flex-end;gap:12px}
+
+/* ═══ TOAST ═══ */
+#toast-container{position:fixed;bottom:24px;right:24px;z-index:300;display:flex;flex-direction:column;gap:12px;pointer-events:none}
+.toast{background:var(--black-light);border:1px solid var(--black-lighter);border-radius:var(--radius-sm);padding:16px 24px;display:flex;align-items:center;gap:12px;box-shadow:0 10px 40px rgba(0,0,0,0.5);transform:translateX(120%);transition:transform 0.4s cubic-bezier(0.175,0.885,0.32,1.275);pointer-events:auto;min-width:320px;max-width:420px}
+.toast.show{transform:translateX(0)}
+.toast-success{border-left:4px solid var(--green)}
+.toast-error{border-left:4px solid #ff4444}
+.toast-info{border-left:4px solid var(--pink)}
+
+/* ═══ LOADING ═══ */
+.loading-spinner{width:40px;height:40px;border:3px solid var(--black-lighter);border-top-color:var(--pink);border-radius:50%;animation:spin 0.8s linear infinite}
+.loading-overlay{position:fixed;inset:0;background:rgba(10,10,10,0.9);backdrop-filter:blur(4px);z-index:250;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+.loading-text{color:var(--gray);font-size:14px}
+
+/* ═══ EMPTY STATE ═══ */
+.empty-state{text-align:center;padding:60px 20px}
+.empty-state-icon{font-size:64px;margin-bottom:16px;opacity:0.5}
+.empty-state-title{font-size:20px;font-weight:700;margin-bottom:8px}
+.empty-state-desc{color:var(--gray);font-size:14px;margin-bottom:24px}
+
+/* ═══ DRAG & DROP ═══ */
+.drag-item{cursor:grab;transition:var(--transition)}
+.drag-item:active{cursor:grabbing}
+.drag-item.dragging{opacity:0.5;transform:scale(1.02);box-shadow:0 10px 30px rgba(0,0,0,0.3)}
+.drag-handle{padding:8px;color:var(--gray);cursor:grab}
+.drag-handle:hover{color:var(--white)}
+
+/* ═══ COLOR PICKER ═══ */
+.color-swatch{width:40px;height:40px;border-radius:var(--radius-sm);border:3px solid transparent;cursor:pointer;transition:var(--transition);position:relative}
+.color-swatch:hover{transform:scale(1.1)}
+.color-swatch.active{border-color:var(--white);box-shadow:0 0 0 2px var(--black),0 0 0 4px var(--pink)}
+
+/* ═══ PREVIEW IFRAME ═══ */
+.preview-frame{width:100%;height:600px;border:2px solid var(--black-lighter);border-radius:var(--radius);background:var(--black);overflow:hidden}
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:1024px){
+  .sidebar{transform:translateX(-100%)}
+  .sidebar.open{transform:translateX(0)}
+  .main-content{margin-left:0}
+  .navbar-inner{padding:0 16px}
+}
+@media(max-width:768px){
+  :root{--header-height:56px}
+  .page-title{font-size:22px}
+  .btn-lg{padding:14px 28px;font-size:15px}
+  .modal{max-width:calc(100vw - 32px)}
+  .main-content{padding:20px 16px}
+}
+
+/* ═══ HIDE/SHOW UTILITIES ═══ */
+.hidden{display:none!important}
+.flex{display:flex}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-between{justify-content:space-between}.justify-center{justify-content:center}.gap-2{gap:8px}.gap-4{gap:16px}.gap-6{gap:24px}
+.w-full{width:100%}.h-full{height:100%}
+.text-center{text-align:center}
+.mt-2{margin-top:8px}.mt-4{margin-top:16px}.mt-6{margin-top:24px}.mb-2{margin-bottom:8px}.mb-4{margin-bottom:16px}.mb-6{margin-bottom:24px}
+.p-4{padding:16px}.p-6{padding:24px}
+.rounded{border-radius:var(--radius-sm)}
+.overflow-hidden{overflow:hidden}
+.relative{position:relative}
+</style>
+</head>
+<body>
+
+<!-- ═══ PARTICLE BACKGROUND ═══ -->
+<div id="particles"></div>
+
+<!-- ═══ TOAST CONTAINER ═══ -->
+<div id="toast-container"></div>
+
+<!-- ═══ LOADING OVERLAY ═══ -->
+<div id="loading-overlay" class="loading-overlay hidden">
+  <div class="loading-spinner"></div>
+  <div class="loading-text">Loading...</div>
+</div>
+
+<!-- ═══ NAVBAR ═══ -->
+<nav id="navbar" class="navbar hidden">
+  <div class="navbar-inner">
+    <a href="#/" class="nav-logo" onclick="app.navigate('/')">
+      <div class="nav-logo-icon">L</div>
+      <div class="nav-logo-text">LINK<span>TROO</span></div>
+    </a>
+    <div class="nav-links" id="nav-links">
+      <a href="#/" class="nav-link" data-route="/">Home</a>
+      <a href="#/features" class="nav-link" data-route="/features">Features</a>
+      <a href="#/templates" class="nav-link" data-route="/templates">Templates</a>
+      <a href="#/pricing" class="nav-link" data-route="/pricing">Pricing</a>
+    </div>
+    <div class="nav-links" id="nav-auth">
+      <a href="#/login" class="nav-link">Log In</a>
+      <a href="#/signup" class="nav-cta">Get Started Free</a>
+    </div>
+    <div class="nav-links hidden" id="nav-user">
+      <a href="#/dashboard" class="nav-link">Dashboard</a>
+      <button class="btn btn-ghost btn-sm" onclick="app.logout()">Logout</button>
+    </div>
+    <button class="btn btn-icon btn-dark hidden" id="mobile-menu-btn" onclick="app.toggleSidebar()">
+      <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══ SIDEBAR (Dashboard) ═══ -->
+<aside id="sidebar" class="sidebar hidden">
+  <div class="sidebar-section-title">Main</div>
+  <a class="sidebar-item active" data-tab="overview" onclick="app.switchTab('overview')">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+    Overview
+  </a>
+  <a class="sidebar-item" data-tab="links" onclick="app.switchTab('links')">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+    Links
+  </a>
+  <a class="sidebar-item" data-tab="design" onclick="app.switchTab('design')">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+    Design
+  </a>
+  <a class="sidebar-item" data-tab="analytics" onclick="app.switchTab('analytics')">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+    Analytics
+  </a>
+  <div class="sidebar-divider"></div>
+  <div class="sidebar-section-title">Settings</div>
+  <a class="sidebar-item" data-tab="profile" onclick="app.switchTab('profile')">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+    Profile
+  </a>
+  <a class="sidebar-item" data-tab="social" onclick="app.switchTab('social')">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+    Social Links
+  </a>
+  <a class="sidebar-item" data-tab="subscribers" onclick="app.switchTab('subscribers')">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+    Subscribers
+  </a>
+  <a class="sidebar-item" data-tab="settings" onclick="app.switchTab('settings')">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+    Settings
+  </a>
+  <div class="sidebar-divider"></div>
+  <a class="sidebar-item" onclick="app.logout()">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
+    Logout
+  </a>
+</aside>
+<div id="sidebar-overlay" class="sidebar-overlay" onclick="app.toggleSidebar()"></div>
+
+<!-- ═══ MAIN APP CONTAINER ═══ -->
+<div id="app" class="app"></div>
+
+<script>
+
+// ═══════════════════════════════════════════════════════════════
+// LINKTROO — Frontend Application Core
+// Single Page App with Hash Router
+// ═══════════════════════════════════════════════════════════════
+
+const API_BASE = '';
+// const API_BASE = 'https://linktroo.YOUR_SUBDOMAIN.workers.dev'; // Uncomment for production
+
+const app = {
+  state: {
+    user: null,
+    token: localStorage.getItem('linktroo_token') || null,
+    currentRoute: '/',
+    dashboardTab: 'overview',
+    links: [],
+    socialLinks: [],
+    subscribers: [],
+    themes: [],
+    analytics: null,
+    profileData: null,
+    isLoading: false,
+    dragItem: null
+  },
+
+  // ─── INIT ───
+  init() {
+    this.createParticles();
+    this.setupRouter();
+    this.checkAuth();
+    this.render();
+
+    // Register service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').catch(() => {});
+    }
+
+    // Setup sync for offline analytics
+    if ('sync' in navigator.serviceWorker?.ready) {
+      window.addEventListener('online', () => {
+        navigator.serviceWorker.ready.then(reg => reg.sync.register('sync-analytics'));
+      });
+    }
+  },
+
+  // ─── PARTICLES ───
+  createParticles() {
+    const container = document.getElementById('particles');
+    if (!container) return;
+    for (let i = 0; i < 30; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      p.style.left = Math.random() * 100 + '%';
+      p.style.top = Math.random() * 100 + '%';
+      p.style.width = (Math.random() * 4 + 2) + 'px';
+      p.style.height = p.style.width;
+      p.style.animationDuration = (Math.random() * 20 + 10) + 's';
+      p.style.animationDelay = (Math.random() * 10) + 's';
+      p.style.opacity = Math.random() * 0.3 + 0.1;
+      container.appendChild(p);
+    }
+  },
+
+  // ─── ROUTER ───
+  setupRouter() {
+    window.addEventListener('hashchange', () => this.handleRoute());
+    window.addEventListener('popstate', () => this.handleRoute());
+    this.handleRoute();
+  },
+
+  handleRoute() {
+    const hash = window.location.hash.replace('#', '') || '/';
+    const [path, query] = hash.split('?');
+    this.state.currentRoute = path;
+
+    // Auth routes protection
+    const authRoutes = ['/dashboard', '/dashboard/links', '/dashboard/design', '/dashboard/analytics', '/dashboard/settings', '/dashboard/profile', '/dashboard/social', '/dashboard/subscribers'];
+    const publicOnly = ['/login', '/signup'];
+
+    if (authRoutes.some(r => path.startsWith(r)) && !this.state.token) {
+      window.location.hash = '#/login';
+      return;
+    }
+    if (publicOnly.includes(path) && this.state.token) {
+      window.location.hash = '#/dashboard';
+      return;
+    }
+
+    // Extract tab from /dashboard/:tab
+    if (path.startsWith('/dashboard/')) {
+      const tab = path.replace('/dashboard/', '');
+      if (tab && tab !== 'dashboard') this.state.dashboardTab = tab;
+    }
+
+    this.render();
+    window.scrollTo(0, 0);
+  },
+
+  navigate(path) {
+    window.location.hash = '#' + path;
+  },
+
+  // ─── AUTH ───
+  async checkAuth() {
+    if (!this.state.token) return;
+    try {
+      const res = await this.api('/api/auth/me');
+      if (res.success) {
+        this.state.user = res.data.user;
+      } else {
+        this.logout();
+      }
+    } catch {
+      // Token might be invalid, but don't logout immediately (offline support)
+      const cached = localStorage.getItem('linktroo_user');
+      if (cached) this.state.user = JSON.parse(cached);
+    }
+  },
+
+  async login(email, password) {
+    this.setLoading(true);
+    try {
+      const res = await this.api('/api/auth/login', 'POST', { email, password });
+      if (res.success) {
+        this.state.token = res.data.token;
+        this.state.user = res.data.user;
+        localStorage.setItem('linktroo_token', res.data.token);
+        localStorage.setItem('linktroo_user', JSON.stringify(res.data.user));
+        this.showToast('Welcome back, ' + res.data.user.display_name + '!', 'success');
+        this.navigate('/dashboard');
+      } else {
+        this.showToast(res.error || 'Login failed', 'error');
+      }
+    } catch (e) {
+      this.showToast('Network error. Please try again.', 'error');
+    }
+    this.setLoading(false);
+  },
+
+  async register(email, password, username, displayName) {
+    this.setLoading(true);
+    try {
+      const res = await this.api('/api/auth/register', 'POST', { 
+        email, password, username, display_name: displayName || username 
+      });
+      if (res.success) {
+        this.state.token = res.data.token;
+        this.state.user = res.data.user;
+        localStorage.setItem('linktroo_token', res.data.token);
+        localStorage.setItem('linktroo_user', JSON.stringify(res.data.user));
+        this.showToast('Account created! Welcome to LINKTROO!', 'success');
+        this.navigate('/dashboard');
+      } else {
+        this.showToast(res.error || 'Registration failed', 'error');
+      }
+    } catch (e) {
+      this.showToast('Network error. Please try again.', 'error');
+    }
+    this.setLoading(false);
+  },
+
+  logout() {
+    this.state.token = null;
+    this.state.user = null;
+    this.state.links = [];
+    this.state.socialLinks = [];
+    this.state.subscribers = [];
+    localStorage.removeItem('linktroo_token');
+    localStorage.removeItem('linktroo_user');
+    this.showToast('Logged out successfully', 'info');
+    this.navigate('/');
+  },
+
+  // ─── API CLIENT ───
+  async api(endpoint, method = 'GET', body = null) {
+    const url = API_BASE + endpoint;
+    const options = {
+      method,
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    };
+    if (this.state.token) {
+      options.headers['Authorization'] = 'Bearer ' + this.state.token;
+    }
+    if (body) {
+      options.body = JSON.stringify(body);
+    }
+
+    const response = await fetch(url, options);
+    const data = await response.json();
+    return data;
+  },
+
+  // ─── UI HELPERS ───
+  setLoading(show) {
+    this.state.isLoading = show;
+    const overlay = document.getElementById('loading-overlay');
+    if (overlay) overlay.classList.toggle('hidden', !show);
+  },
+
+  showToast(message, type = 'info') {
+    const container = document.getElementById('toast-container');
+    if (!container) return;
+    const toast = document.createElement('div');
+    toast.className = 'toast toast-' + type;
+    const icon = type === 'success' ? '✓' : type === 'error' ? '✕' : 'ℹ';
+    toast.innerHTML = `<span style="font-size:18px">${icon}</span><span>${message}</span>`;
+    container.appendChild(toast);
+    requestAnimationFrame(() => toast.classList.add('show'));
+    setTimeout(() => {
+      toast.classList.remove('show');
+      setTimeout(() => toast.remove(), 400);
+    }, 4000);
+  },
+
+  toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+    if (sidebar) sidebar.classList.toggle('open');
+    if (overlay) overlay.classList.toggle('active');
+  },
+
+  switchTab(tab) {
+    this.state.dashboardTab = tab;
+    this.navigate('/dashboard/' + tab);
+    // Update sidebar active state
+    document.querySelectorAll('.sidebar-item').forEach(el => {
+      el.classList.toggle('active', el.dataset.tab === tab);
+    });
+    // Close mobile sidebar
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+    if (sidebar) sidebar.classList.remove('open');
+    if (overlay) overlay.classList.remove('active');
+  },
+
+  // ─── RENDER ───
+  render() {
+    const appEl = document.getElementById('app');
+    const navbar = document.getElementById('navbar');
+    const sidebar = document.getElementById('sidebar');
+    const navAuth = document.getElementById('nav-auth');
+    const navUser = document.getElementById('nav-user');
+    const navLinks = document.getElementById('nav-links');
+
+    const route = this.state.currentRoute;
+    const isDashboard = route.startsWith('/dashboard');
+    const isAuthPage = route === '/login' || route === '/signup';
+    const isPublicProfile = route.startsWith('/@');
+
+    // Show/hide navbar
+    if (navbar) {
+      navbar.classList.toggle('hidden', isPublicProfile);
+    }
+
+    // Show/hide sidebar
+    if (sidebar) {
+      sidebar.classList.toggle('hidden', !isDashboard);
+    }
+
+    // Update nav auth state
+    if (navAuth && navUser) {
+      const isLoggedIn = !!this.state.user;
+      navAuth.classList.toggle('hidden', isLoggedIn);
+      navUser.classList.toggle('hidden', !isLoggedIn);
+    }
+
+    // Update active nav links
+    document.querySelectorAll('.nav-link').forEach(el => {
+      el.classList.toggle('active', el.dataset.route === route);
+    });
+
+    // Route rendering
+    if (isPublicProfile) {
+      const username = route.replace('/@', '');
+      this.renderPublicProfile(username);
+    } else if (isDashboard) {
+      this.renderDashboard();
+    } else if (route === '/login') {
+      this.renderLogin();
+    } else if (route === '/signup') {
+      this.renderSignup();
+    } else if (route === '/features') {
+      this.renderFeatures();
+    } else if (route === '/templates') {
+      this.renderTemplates();
+    } else if (route === '/pricing') {
+      this.renderPricing();
+    } else {
+      this.renderLanding();
+    }
+
+    // Update page title based on route
+    this.updatePageTitle();
+  },
+
+  updatePageTitle() {
+    const route = this.state.currentRoute;
+    let title = 'LINKTROO — Bio Link Generator Free Tool';
+
+    if (route.startsWith('/@')) {
+      const username = route.replace('/@', '');
+      title = `@${username} | LINKTROO — All My Links`;
+    } else if (route === '/dashboard') {
+      title = 'Dashboard | LINKTROO';
+    } else if (route === '/login') {
+      title = 'Login | LINKTROO';
+    } else if (route === '/signup') {
+      title = 'Sign Up | LINKTROO';
+    } else if (route === '/features') {
+      title = 'Features | LINKTROO — 134+ Real Working Features';
+    } else if (route === '/templates') {
+      title = 'Templates | LINKTROO — 10 Premium Themes';
+    } else if (route === '/pricing') {
+      title = 'Pricing | LINKTROO — Free Forever';
+    }
+
+    document.title = title;
+  },
+
+  // ─── ESCAPE HTML ───
+  escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  },
+
+  // ─── FORMAT NUMBER ───
+  formatNumber(num) {
+    if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
+    if (num >= 1000) return (num / 1000).toFixed(1) + 'K';
+    return num.toString();
+  },
+
+  // ─── COPY TO CLIPBOARD ───
+  async copyToClipboard(text) {
+    try {
+      await navigator.clipboard.writeText(text);
+      this.showToast('Copied to clipboard!', 'success');
+    } catch {
+      const input = document.createElement('input');
+      input.value = text;
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand('copy');
+      document.body.removeChild(input);
+      this.showToast('Copied to clipboard!', 'success');
+    }
+  }
+};
+
+
+// ═══════════════════════════════════════════════════════════════
+// LANDING PAGE
+// ═══════════════════════════════════════════════════════════════
+
+app.renderLanding = function() {
+  const appEl = document.getElementById('app');
+  appEl.innerHTML = `
+    <style>
+      .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;padding:120px 20px 80px;text-align:center;background:radial-gradient(ellipse at center,rgba(255,0,128,0.08) 0%,transparent 70%)}
+      .hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;background:rgba(255,0,128,0.1);border:1px solid rgba(255,0,128,0.3);border-radius:50px;font-size:13px;color:var(--pink);margin-bottom:32px;animation:fadeIn 0.6s ease-out}
+      .hero-badge .pulse-dot{width:8px;height:8px;background:var(--green);border-radius:50%;animation:pulse 2s infinite}
+      .hero-title{font-family:var(--font-display);font-size:clamp(40px,8vw,80px);font-weight:900;line-height:1.1;margin-bottom:24px;animation:fadeIn 0.8s ease-out 0.1s both}
+      .hero-title .gradient{background:linear-gradient(135deg,var(--pink),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+      .hero-subtitle{font-size:clamp(16px,3vw,22px);color:var(--gray);max-width:640px;margin:0 auto 40px;line-height:1.7;animation:fadeIn 0.8s ease-out 0.2s both}
+      .hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;animation:fadeIn 0.8s ease-out 0.3s both}
+      .hero-stats{display:flex;gap:48px;justify-content:center;margin-top:64px;flex-wrap:wrap;animation:fadeIn 0.8s ease-out 0.4s both}
+      .hero-stat{text-align:center}
+      .hero-stat-value{font-family:var(--font-display);font-size:36px;font-weight:800;color:var(--pink)}
+      .hero-stat-label{font-size:13px;color:var(--gray);text-transform:uppercase;letter-spacing:1px}
+
+      .demo-phone{width:320px;height:640px;background:var(--black-light);border:8px solid var(--black-lighter);border-radius:40px;margin:60px auto 0;overflow:hidden;position:relative;box-shadow:0 30px 60px rgba(0,0,0,0.5),0 0 40px rgba(255,0,128,0.1);animation:float 6s ease-in-out infinite}
+      .demo-phone-notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:120px;height:28px;background:var(--black-lighter);border-radius:0 0 20px 20px;z-index:10}
+      .demo-phone-screen{padding:40px 20px 20px;height:100%;overflow-y:auto}
+      .demo-avatar{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--green));margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:800}
+      .demo-name{text-align:center;font-weight:700;font-size:18px;margin-bottom:4px}
+      .demo-bio{text-align:center;font-size:12px;color:var(--gray);margin-bottom:24px}
+      .demo-btn{display:block;padding:14px;margin:10px 0;background:linear-gradient(135deg,var(--pink),#ff44aa);border-radius:12px;text-align:center;font-weight:600;font-size:14px;box-shadow:0 4px 0 #880044;transform:translateY(0);transition:all 0.2s}
+      .demo-btn:hover{transform:translateY(-2px)}
+      .demo-social{display:flex;gap:16px;justify-content:center;margin-top:20px}
+      .demo-social-icon{width:36px;height:36px;border-radius:50%;background:var(--black-lighter);display:flex;align-items:center;justify-content:center;font-size:16px}
+
+      .features-section{padding:100px 20px;background:linear-gradient(180deg,transparent,rgba(255,0,128,0.03),transparent)}
+      .section-header{text-align:center;margin-bottom:64px}
+      .section-title{font-family:var(--font-display);font-size:clamp(28px,5vw,48px);font-weight:800;margin-bottom:16px}
+      .section-subtitle{color:var(--gray);font-size:16px;max-width:600px;margin:0 auto}
+
+      .feature-card{padding:32px;border-radius:var(--radius);background:var(--black-light);border:1px solid var(--black-lighter);transition:var(--transition);height:100%}
+      .feature-card:hover{border-color:rgba(255,0,128,0.3);transform:translateY(-4px);box-shadow:var(--shadow-glow)}
+      .feature-icon{width:56px;height:56px;border-radius:var(--radius-sm);background:linear-gradient(135deg,rgba(255,0,128,0.2),rgba(0,255,136,0.2));display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:20px}
+      .feature-title{font-size:18px;font-weight:700;margin-bottom:8px}
+      .feature-desc{color:var(--gray);font-size:14px;line-height:1.6}
+
+      .how-it-works{padding:100px 20px}
+      .step{display:flex;gap:32px;align-items:flex-start;margin-bottom:48px}
+      .step-number{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--green));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:24px;flex-shrink:0}
+      .step-content h3{font-size:22px;font-weight:700;margin-bottom:8px}
+      .step-content p{color:var(--gray);line-height:1.7}
+
+      .templates-section{padding:100px 20px;background:linear-gradient(180deg,transparent,rgba(0,255,136,0.03),transparent)}
+      .template-card{height:200px;border-radius:var(--radius);position:relative;overflow:hidden;cursor:pointer;transition:var(--transition)}
+      .template-card:hover{transform:scale(1.03)}
+      .template-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,0.8));display:flex;align-items:flex-end;padding:20px}
+      .template-name{font-weight:700;font-size:16px}
+
+      .pricing-section{padding:100px 20px}
+      .pricing-card{padding:40px;border-radius:var(--radius);background:var(--black-light);border:1px solid var(--black-lighter);text-align:center;position:relative;transition:var(--transition)}
+      .pricing-card:hover{border-color:rgba(255,0,128,0.3);box-shadow:var(--shadow-glow)}
+      .pricing-card.featured{border-color:var(--pink);box-shadow:0 0 30px rgba(255,0,128,0.2)}
+      .pricing-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);padding:6px 20px;background:linear-gradient(135deg,var(--pink),#ff44aa);border-radius:20px;font-size:12px;font-weight:700;text-transform:uppercase}
+      .pricing-name{font-size:24px;font-weight:800;margin-bottom:8px}
+      .pricing-price{font-family:var(--font-display);font-size:48px;font-weight:900;margin:16px 0}
+      .pricing-price span{font-size:16px;color:var(--gray);font-weight:400}
+      .pricing-features{text-align:left;margin:24px 0}
+      .pricing-feature{display:flex;align-items:center;gap:12px;padding:8px 0;color:var(--gray);font-size:14px}
+      .pricing-feature svg{color:var(--green);flex-shrink:0}
+
+      .cta-section{padding:100px 20px;text-align:center;background:radial-gradient(ellipse at center,rgba(255,0,128,0.1) 0%,transparent 70%)}
+      .cta-title{font-family:var(--font-display);font-size:clamp(32px,6vw,56px);font-weight:900;margin-bottom:24px}
+      .cta-subtitle{color:var(--gray);font-size:18px;max-width:560px;margin:0 auto 40px}
+
+      .footer{padding:60px 20px 40px;border-top:1px solid var(--black-lighter)}
+      .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+      .footer-brand{font-family:var(--font-display);font-size:24px;font-weight:800;margin-bottom:16px}
+      .footer-brand span{color:var(--pink)}
+      .footer-desc{color:var(--gray);font-size:14px;line-height:1.7;margin-bottom:20px}
+      .footer-social{display:flex;gap:12px}
+      .footer-social a{width:40px;height:40px;border-radius:50%;background:var(--black-lighter);display:flex;align-items:center;justify-content:center;color:var(--gray);text-decoration:none;transition:var(--transition)}
+      .footer-social a:hover{background:var(--pink);color:var(--white)}
+      .footer-title{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:20px}
+      .footer-links{list-style:none}
+      .footer-links li{margin-bottom:12px}
+      .footer-links a{color:var(--gray);text-decoration:none;font-size:14px;transition:var(--transition)}
+      .footer-links a:hover{color:var(--pink)}
+      .footer-bottom{text-align:center;padding-top:24px;border-top:1px solid var(--black-lighter);color:var(--gray-dark);font-size:13px}
+
+      .scroll-indicator{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);animation:bounce 2s infinite}
+      .scroll-indicator svg{color:var(--gray)}
+
+      @media(max-width:768px){
+        .hero{padding:100px 16px 60px}
+        .hero-stats{gap:24px}
+        .demo-phone{width:280px;height:560px}
+        .footer-grid{grid-template-columns:1fr 1fr}
+        .step{flex-direction:column;gap:16px}
+      }
+    </style>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>134+ Real Working Features — 100% Free Forever</span>
+        </div>
+        <h1 class="hero-title">
+          Your Links.<br>Your <span class="gradient">Brand.</span><br>Your Way.
+        </h1>
+        <p class="hero-subtitle">
+          The most advanced bio link tool on the planet. Unlimited links, 3D buttons, 
+          real analytics, premium themes — all free. No credit card. No limits.
+        </p>
+        <div class="hero-cta">
+          <a href="#/signup" class="btn btn-primary btn-lg">Create Your Free Bio Link →</a>
+          <a href="#/features" class="btn btn-ghost btn-lg">Explore Features</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-value">∞</div>
+            <div class="hero-stat-label">Unlimited Links</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">10+</div>
+            <div class="hero-stat-label">Premium Themes</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">0₹</div>
+            <div class="hero-stat-label">Forever Free</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">134+</div>
+            <div class="hero-stat-label">Features</div>
+          </div>
+        </div>
+
+        <!-- Phone Demo -->
+        <div class="demo-phone">
+          <div class="demo-phone-notch"></div>
+          <div class="demo-phone-screen">
+            <div class="demo-avatar">A</div>
+            <div class="demo-name">@alexdesign</div>
+            <div class="demo-bio">Designer • Creator • Dreamer ✨</div>
+            <div class="demo-btn">🎨 My Portfolio</div>
+            <div class="demo-btn">📸 Instagram</div>
+            <div class="demo-btn">🎵 Spotify Playlist</div>
+            <div class="demo-btn">💼 Hire Me</div>
+            <div class="demo-btn">☕ Buy Me Coffee</div>
+            <div class="demo-social">
+              <div class="demo-social-icon">📷</div>
+              <div class="demo-social-icon">🐦</div>
+              <div class="demo-social-icon">🎵</div>
+              <div class="demo-social-icon">▶️</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Everything You <span class="gradient">Need</span></h2>
+          <p class="section-subtitle">134+ real working features. Not placeholders. Not "coming soon". Everything works right now.</p>
+        </div>
+        <div class="grid grid-3">
+          ${this.getFeatureCards()}
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works">
+      <div class="container-narrow">
+        <div class="section-header">
+          <h2 class="section-title">How It <span class="gradient">Works</span></h2>
+          <p class="section-subtitle">From zero to live bio link in under 60 seconds.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Create Your Account</h3>
+            <p>Sign up in 10 seconds with just email and username. No credit card. No verification hassle. Instant access to everything.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Add Your Links</h3>
+            <p>Add unlimited links with titles, descriptions, thumbnails, and custom icons. Drag and drop to reorder. Schedule links to appear/disappear automatically.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Customize Your Design</h3>
+            <p>Choose from 10 premium themes or create your own. Pick colors, fonts, button styles, backgrounds. Make it uniquely yours.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Share & Track</h3>
+            <p>Get your custom URL (linktroo.pages.dev/@you). Share it everywhere. Track views, clicks, countries, devices, and referrers in real-time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEMPLATES -->
+    <section class="templates-section" id="templates">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Premium <span class="gradient">Templates</span></h2>
+          <p class="section-subtitle">10 stunning pre-built themes. One click to apply. Fully customizable.</p>
+        </div>
+        <div class="grid grid-5">
+          ${this.getTemplateCards()}
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing-section" id="pricing">
+      <div class="container-narrow">
+        <div class="section-header">
+          <h2 class="section-title">Simple <span class="gradient">Pricing</span></h2>
+          <p class="section-subtitle">Free forever. No hidden fees. No surprises.</p>
+        </div>
+        <div class="grid grid-3" style="max-width:900px;margin:0 auto">
+          <div class="pricing-card">
+            <div class="pricing-name">Starter</div>
+            <div class="pricing-price">$0<span>/month</span></div>
+            <div class="pricing-features">
+              <div class="pricing-feature"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> Unlimited Links</div>
+              <div class="pricing-feature"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> Basic Analytics</div>
+              <div class="pricing-feature"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> 5 Social Platforms</div>
+              <div class="pricing-feature"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> QR Code</div>
+              <div class="pricing-feature"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> Email Capture</div>
+            </div>
+            <a href="#/signup" class="btn btn-dark w-full">Get Started</a>
+          </div>
+          <div class="pricing-card featured">
+            <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-name">Pro</div>
+            <div class="pricing-price">$0<span>/month</span></div>
+            <div class="pricing-features">
+              <div class="pricing-feature"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> Everything in Starter</div>
+              <div class="pricing-feature"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> Advanced Analytics</div>
+              <div class="pricing-feature"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> 18+ Social Platforms</div>
+              <div class="pricing-feature"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> All 10 Themes</div>
+              <div class="pricing-feature"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> Link Scheduling</div>
+              <div class="pricing-feature"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> UTM Tracking</div>
+              <div class="pricing-feature"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> Priority Support</div>
+            </div>
+            <a href="#/signup" class="btn btn-primary w-full">Get Started Free</a>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-name">Enterprise</div>
+            <div class="pricing-price">$0<span>/month</span></div>
+            <div class="pricing-features">
+              <div class="pricing-feature"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> Everything in Pro</div>
+              <div class="pricing-feature"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> Custom Domain</div>
+              <div class="pricing-feature"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> Remove Branding</div>
+              <div class="pricing-feature"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> Team Collaboration</div>
+              <div class="pricing-feature"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> API Access</div>
+            </div>
+            <a href="#/signup" class="btn btn-dark w-full">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <h2 class="cta-title">Ready to <span class="gradient">Link Up?</span></h2>
+        <p class="cta-subtitle">Join thousands of creators, businesses, and influencers who trust LINKTROO for their bio links.</p>
+        <a href="#/signup" class="btn btn-primary btn-lg" style="font-size:18px;padding:20px 48px">Create Your Free Bio Link →</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">LINK<span>TROO</span></div>
+            <p class="footer-desc">The most advanced bio link generator in the world. 134+ features, unlimited links, zero cost. Built for creators who demand more.</p>
+            <div class="footer-social">
+              <a href="#" title="Twitter">🐦</a>
+              <a href="#" title="Instagram">📷</a>
+              <a href="#" title="Discord">💬</a>
+              <a href="#" title="GitHub">💻</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-title">Product</div>
+            <ul class="footer-links">
+              <li><a href="#/features">Features</a></li>
+              <li><a href="#/templates">Templates</a></li>
+              <li><a href="#/pricing">Pricing</a></li>
+              <li><a href="#">Changelog</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-title">Resources</div>
+            <ul class="footer-links">
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">API Reference</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-title">Company</div>
+            <ul class="footer-links">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          © 2026 LINKTROO. All rights reserved. Built with ❤️ on Cloudflare Edge.
+        </div>
+      </div>
+    </footer>
+  `;
+};
+
+app.getFeatureCards = function() {
+  const features = [
+    { icon: '🔗', title: 'Unlimited Links', desc: 'Add as many links as you want. No limits. No restrictions. No paywalls.' },
+    { icon: '🎨', title: 'Premium Themes', desc: '10 stunning pre-built themes with dark mode, gradients, and neon effects.' },
+    { icon: '📊', title: 'Real Analytics', desc: 'Track views, clicks, countries, devices, browsers, and traffic sources.' },
+    { icon: '📱', title: 'Mobile Optimized', desc: 'Looks perfect on every device. iPhone, Android, tablet, desktop — all covered.' },
+    { icon: '⚡', title: '3D Buttons', desc: 'Stunning 3D button effects with shadows, glow, and press animations.' },
+    { icon: '🔒', title: 'Secure & Private', desc: 'GDPR compliant. Your data is encrypted. No tracking. No selling data.' },
+    { icon: '📧', title: 'Email Capture', desc: 'Collect subscriber emails directly on your bio page. Export anytime.' },
+    { icon: '🔗', title: 'Social Icons', desc: '18+ social platform icons. Instagram, TikTok, YouTube, and more.' },
+    { icon: '📅', title: 'Link Scheduling', desc: 'Schedule links to appear or disappear at specific dates and times.' },
+    { icon: '📍', title: 'Geo Targeting', desc: 'See where your visitors come from. Country, city, and timezone data.' },
+    { icon: '🎵', title: 'Media Embeds', desc: 'Embed YouTube videos, Spotify playlists, and images directly.' },
+    { icon: '🔔', title: 'PWA Support', desc: 'Install LINKTROO as an app on your phone. Works offline.' }
+  ];
+
+  return features.map(f => `
+    <div class="feature-card animate-fadeIn">
+      <div class="feature-icon">${f.icon}</div>
+      <div class="feature-title">${f.title}</div>
+      <div class="feature-desc">${f.desc}</div>
+    </div>
+  `).join('');
+};
+
+app.getTemplateCards = function() {
+  const themes = [
+    { name: 'Dark Neon', bg: 'linear-gradient(135deg, #0a0a0a, #1a0a1a, #0a1a0a)', color: '#ff0080' },
+    { name: 'Cyber Pink', bg: 'linear-gradient(135deg, #1a001a, #330033, #1a001a)', color: '#ff00ff' },
+    { name: 'Ocean Depth', bg: 'linear-gradient(135deg, #001a33, #003366, #001a33)', color: '#00ccff' },
+    { name: 'Forest Mist', bg: 'linear-gradient(135deg, #0a1a0a, #1a331a, #0a1a0a)', color: '#00ff66' },
+    { name: 'Sunset Glow', bg: 'linear-gradient(135deg, #331a00, #663300, #331a00)', color: '#ff8800' },
+    { name: 'Midnight Purple', bg: 'linear-gradient(135deg, #0a001a, #1a0033, #0a001a)', color: '#9900ff' },
+    { name: 'Ice Crystal', bg: 'linear-gradient(135deg, #001a1a, #003333, #001a1a)', color: '#00ffff' },
+    { name: 'Rose Gold', bg: 'linear-gradient(135deg, #1a0a0a, #331a1a, #1a0a0a)', color: '#ff6666' },
+    { name: 'Emerald City', bg: 'linear-gradient(135deg, #001a0a, #00331a, #001a0a)', color: '#00ff88' },
+    { name: 'Cosmic Dust', bg: 'linear-gradient(135deg, #0a0a1a, #1a1a33, #0a0a1a)', color: '#8888ff' }
+  ];
+
+  return themes.map(t => `
+    <div class="template-card" style="background:${t.bg}">
+      <div class="template-overlay">
+        <div class="template-name" style="color:${t.color}">${t.name}</div>
+      </div>
+    </div>
+  `).join('');
+};
+
+// ═══════════════════════════════════════════════════════════════
+// AUTH PAGES
+// ═══════════════════════════════════════════════════════════════
+
+app.renderLogin = function() {
+  const appEl = document.getElementById('app');
+  appEl.innerHTML = `
+    <style>
+      .auth-page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:80px 20px;background:radial-gradient(ellipse at center,rgba(255,0,128,0.05) 0%,transparent 70%)}
+      .auth-card{width:100%;max-width:420px;padding:48px;border-radius:var(--radius);background:var(--black-light);border:1px solid var(--black-lighter);box-shadow:0 25px 50px rgba(0,0,0,0.5)}
+      .auth-logo{text-align:center;margin-bottom:32px}
+      .auth-logo-icon{width:64px;height:64px;background:linear-gradient(135deg,var(--pink),#ff44aa);border-radius:16px;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:32px;margin:0 auto 16px;box-shadow:0 0 30px rgba(255,0,128,0.3)}
+      .auth-logo-title{font-family:var(--font-display);font-size:24px;font-weight:700}
+      .auth-logo-title span{color:var(--pink)}
+      .auth-subtitle{text-align:center;color:var(--gray);font-size:14px;margin-top:8px;margin-bottom:32px}
+      .auth-footer{text-align:center;margin-top:24px;color:var(--gray);font-size:14px}
+      .auth-footer a{color:var(--pink);text-decoration:none;font-weight:600}
+      .auth-divider{display:flex;align-items:center;gap:16px;margin:24px 0;color:var(--gray-dark);font-size:13px}
+      .auth-divider::before,.auth-divider::after{content:'';flex:1;height:1px;background:var(--black-lighter)}
+    </style>
+    <div class="auth-page">
+      <div class="auth-card animate-fadeIn">
+        <div class="auth-logo">
+          <div class="auth-logo-icon">L</div>
+          <div class="auth-logo-title">LINK<span>TROO</span></div>
+          <div class="auth-subtitle">Welcome back! Sign in to your account.</div>
+        </div>
+        <form onsubmit="event.preventDefault(); app.login(this.email.value, this.password.value);">
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" name="email" class="form-input" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Password</label>
+            <input type="password" name="password" class="form-input" placeholder="••••••••" required minlength="6">
+          </div>
+          <button type="submit" class="btn btn-primary w-full" style="margin-top:8px">Sign In →</button>
+        </form>
+        <div class="auth-divider">or</div>
+        <a href="#/signup" class="btn btn-dark w-full">Create New Account</a>
+        <div class="auth-footer">
+          <a href="#/">← Back to Home</a>
+        </div>
+      </div>
+    </div>
+  `;
+};
+
+app.renderSignup = function() {
+  const appEl = document.getElementById('app');
+  appEl.innerHTML = `
+    <style>
+      .auth-page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:80px 20px;background:radial-gradient(ellipse at center,rgba(255,0,128,0.05) 0%,transparent 70%)}
+      .auth-card{width:100%;max-width:420px;padding:48px;border-radius:var(--radius);background:var(--black-light);border:1px solid var(--black-lighter);box-shadow:0 25px 50px rgba(0,0,0,0.5)}
+      .auth-logo{text-align:center;margin-bottom:32px}
+      .auth-logo-icon{width:64px;height:64px;background:linear-gradient(135deg,var(--pink),#ff44aa);border-radius:16px;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:32px;margin:0 auto 16px;box-shadow:0 0 30px rgba(255,0,128,0.3)}
+      .auth-logo-title{font-family:var(--font-display);font-size:24px;font-weight:700}
+      .auth-logo-title span{color:var(--pink)}
+      .auth-subtitle{text-align:center;color:var(--gray);font-size:14px;margin-top:8px;margin-bottom:32px}
+      .auth-footer{text-align:center;margin-top:24px;color:var(--gray);font-size:14px}
+      .auth-footer a{color:var(--pink);text-decoration:none;font-weight:600}
+      .username-preview{color:var(--gray);font-size:13px;margin-top:6px}
+      .username-preview span{color:var(--green)}
+    </style>
+    <div class="auth-page">
+      <div class="auth-card animate-fadeIn">
+        <div class="auth-logo">
+          <div class="auth-logo-icon">L</div>
+          <div class="auth-logo-title">LINK<span>TROO</span></div>
+          <div class="auth-subtitle">Create your free account in 10 seconds.</div>
+        </div>
+        <form onsubmit="event.preventDefault(); app.register(this.email.value, this.password.value, this.username.value, this.display_name.value);">
+          <div class="form-group">
+            <label class="form-label">Username</label>
+            <input type="text" name="username" class="form-input" placeholder="johndoe" required minlength="3" maxlength="30" pattern="[a-zA-Z0-9_-]+" oninput="this.value=this.value.replace(/[^a-zA-Z0-9_-]/g,'').toLowerCase();document.getElementById('username-preview').innerHTML='Your link: <span>linktroo.pages.dev/@'+this.value+'</span>'">
+            <div class="username-preview" id="username-preview">Your link: <span>linktroo.pages.dev/@you</span></div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Display Name</label>
+            <input type="text" name="display_name" class="form-input" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" name="email" class="form-input" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Password</label>
+            <input type="password" name="password" class="form-input" placeholder="••••••••" required minlength="6">
+          </div>
+          <button type="submit" class="btn btn-primary w-full" style="margin-top:8px">Create Free Account →</button>
+        </form>
+        <div class="auth-footer">
+          Already have an account? <a href="#/login">Sign In</a>
+        </div>
+      </div>
+    </div>
+  `;
+};
+
+app.renderFeatures = function() {
+  this.renderLanding();
+  setTimeout(() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' }), 100);
+};
+
+app.renderTemplates = function() {
+  this.renderLanding();
+  setTimeout(() => document.getElementById('templates')?.scrollIntoView({ behavior: 'smooth' }), 100);
+};
+
+app.renderPricing = function() {
+  this.renderLanding();
+  setTimeout(() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' }), 100);
+};
+
+
+// ═══════════════════════════════════════════════════════════════
+// PUBLIC PROFILE PAGE (/@username)
+// ═══════════════════════════════════════════════════════════════
+
+app.renderPublicProfile = async function(username) {
+  const appEl = document.getElementById('app');
+
+  // Show loading first
+  appEl.innerHTML = `
+    <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px">
+      <div class="loading-spinner"></div>
+      <div style="color:var(--gray);font-size:14px">Loading profile...</div>
+    </div>
+  `;
+
+  try {
+    const res = await this.api('/api/public/' + username);
+    if (!res.success) {
+      appEl.innerHTML = `
+        <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;text-align:center;padding:20px">
+          <div style="font-size:64px">😕</div>
+          <h1 style="font-size:28px;font-weight:800">Profile Not Found</h1>
+          <p style="color:var(--gray)">The username "@${username}" does not exist.</p>
+          <a href="#/" class="btn btn-primary">Go Home</a>
+        </div>
+      `;
+      return;
+    }
+
+    const data = res.data;
+    const profile = data.profile;
+    const links = data.links || [];
+    const socials = data.social_links || [];
+
+    // Update meta tags dynamically
+    this.updateProfileMeta(profile);
+
+    // Apply profile theme
+    const bgStyle = profile.background_value || 'linear-gradient(135deg, #0a0a0a 0%, #1a0a1a 50%, #0a1a0a 100%)';
+    const btnColor = profile.button_color || '#ff0080';
+    const accentColor = profile.accent_color || '#ff0080';
+    const fontFamily = profile.font_family || 'Inter';
+    const btnStyle = profile.button_style || '3d';
+
+    const socialIcons = {
+      instagram: '📷', twitter: '🐦', x: '𝕏', tiktok: '🎵', youtube: '▶️',
+      facebook: '👍', linkedin: '💼', github: '💻', twitch: '📺',
+      discord: '💬', telegram: '✈️', whatsapp: '💬', snapchat: '👻',
+      pinterest: '📌', spotify: '🎵', soundcloud: '☁️', medium: '📝', reddit: '🔴'
+    };
+
+    appEl.innerHTML = `
+      <style>
+        .public-profile{min-height:100vh;font-family:'${fontFamily}',system-ui,sans-serif;position:relative}
+        .public-profile-bg{position:fixed;inset:0;z-index:0;background:${bgStyle};background-size:400% 400%;animation:gradientShift 15s ease infinite}
+        .public-profile-content{position:relative;z-index:1;max-width:680px;margin:0 auto;padding:60px 20px 40px;text-align:center}
+        .public-avatar{width:120px;height:120px;border-radius:50%;margin:0 auto 20px;object-fit:cover;border:4px solid ${accentColor};box-shadow:0 0 30px ${accentColor}40,0 0 60px ${accentColor}20;background:linear-gradient(135deg,${accentColor},${profile.secondary_color || '#00ff88'});display:flex;align-items:center;justify-content:center;font-size:48px;font-weight:800;color:white}
+        .public-name{font-size:28px;font-weight:800;margin-bottom:8px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,0.5)}
+        .public-bio{font-size:15px;color:rgba(255,255,255,0.7);margin-bottom:24px;line-height:1.6;max-width:500px;margin-left:auto;margin-right:auto}
+        .public-verified{display:inline-flex;align-items:center;gap:6px;margin-bottom:16px}
+        .public-verified-badge{background:${accentColor};color:#fff;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px}
+        .public-socials{display:flex;gap:16px;justify-content:center;margin-bottom:32px;flex-wrap:wrap}
+        .public-social-link{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;font-size:22px;text-decoration:none;transition:all 0.3s;border:1px solid rgba(255,255,255,0.1)}
+        .public-social-link:hover{background:${accentColor};transform:translateY(-3px);box-shadow:0 10px 20px ${accentColor}40}
+        .public-links{margin-bottom:32px}
+        .public-subscribe{max-width:400px;margin:32px auto;padding:24px;background:rgba(255,255,255,0.05);backdrop-filter:blur(10px);border-radius:var(--radius);border:1px solid rgba(255,255,255,0.1)}
+        .public-subscribe-title{font-size:16px;font-weight:700;margin-bottom:12px}
+        .public-footer{text-align:center;padding:24px;color:rgba(255,255,255,0.4);font-size:12px}
+        .public-footer a{color:rgba(255,255,255,0.6);text-decoration:none}
+        .public-footer a:hover{color:${accentColor}}
+        .public-qr-btn{position:fixed;bottom:24px;right:24px;width:56px;height:56px;border-radius:50%;background:${accentColor};color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 15px ${accentColor}60;transition:all 0.3s;z-index:50;font-size:24px}
+        .public-qr-btn:hover{transform:scale(1.1)}
+        @media(max-width:480px){
+          .public-profile-content{padding:40px 16px 20px}
+          .public-avatar{width:100px;height:100px;font-size:40px}
+          .public-name{font-size:24px}
+        }
+      </style>
+
+      <div class="public-profile">
+        <div class="public-profile-bg"></div>
+        <div class="public-profile-content">
+          ${profile.avatar_url ? 
+            `<img src="${this.escapeHtml(profile.avatar_url)}" class="public-avatar" alt="${this.escapeHtml(profile.display_name || profile.username)}">` :
+            `<div class="public-avatar">${(profile.display_name || profile.username).charAt(0).toUpperCase()}</div>`
+          }
+
+          <h1 class="public-name">${this.escapeHtml(profile.display_name || profile.username)}</h1>
+
+          ${profile.is_verified ? `<div class="public-verified"><span class="public-verified-badge">✓ Verified</span></div>` : ''}
+
+          ${profile.bio ? `<p class="public-bio">${this.escapeHtml(profile.bio)}</p>` : ''}
+
+          ${socials.length > 0 ? `
+            <div class="public-socials">
+              ${socials.map(s => `
+                <a href="${this.escapeHtml(s.url)}" target="_blank" rel="noopener" class="public-social-link" title="${this.escapeHtml(s.platform)}">
+                  ${s.custom_icon || socialIcons[s.platform] || '🔗'}
+                </a>
+              `).join('')}
+            </div>
+          ` : ''}
+
+          <div class="public-links">
+            ${links.map(link => {
+              const isScheduled = link.schedule_start || link.schedule_end;
+              const now = new Date().toISOString();
+              const isVisible = !isScheduled || 
+                (!link.schedule_start || link.schedule_start <= now) && 
+                (!link.schedule_end || link.schedule_end >= now);
+
+              if (!isVisible) return '';
+
+              const btnClass = btnStyle === '3d' ? 'btn-3d' : btnStyle === 'pill' ? 'btn-3d pill' : btnStyle === 'square' ? 'btn-3d square' : 'btn-3d';
+              const btnGradient = btnColor === '#00ff88' ? 'green' : '';
+
+              return `
+                <a href="${this.escapeHtml(link.url)}" 
+                   target="_blank" 
+                   rel="noopener"
+                   class="${btnClass} ${btnGradient} ${link.is_featured ? 'outline' : ''}"
+                   onclick="app.trackPublicClick('${link.id}', '${profile.id}')"
+                   style="${link.is_featured ? 'border-color:' + btnColor : ''}">
+                  ${link.icon ? `<span style="margin-right:8px">${link.icon}</span>` : ''}
+                  ${link.thumbnail_url ? `<img src="${this.escapeHtml(link.thumbnail_url)}" style="width:32px;height:32px;border-radius:8px;margin-right:12px;object-fit:cover">` : ''}
+                  ${this.escapeHtml(link.title)}
+                  ${link.is_priority ? '<span style="margin-left:auto;font-size:12px">⭐</span>' : ''}
+                </a>
+              `;
+            }).join('')}
+          </div>
+
+          <!-- Email Subscribe -->
+          <div class="public-subscribe">
+            <div class="public-subscribe-title">📧 Subscribe for Updates</div>
+            <form onsubmit="event.preventDefault(); app.publicSubscribe('${profile.id}', this.email.value, this);">
+              <div style="display:flex;gap:8px">
+                <input type="email" name="email" class="form-input" placeholder="your@email.com" required style="background:rgba(0,0,0,0.3);border-color:rgba(255,255,255,0.2)">
+                <button type="submit" class="btn btn-primary" style="white-space:nowrap">Subscribe</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="public-footer">
+            <p>🔗 Powered by <a href="https://linktroo.pages.dev" target="_blank">LINKTROO</a> — Free Bio Link Generator</p>
+            <p style="margin-top:4px">${this.formatNumber(profile.profile_views || 0)} views · ${this.formatNumber(profile.total_clicks || 0)} clicks</p>
+          </div>
+        </div>
+
+        <!-- QR Code Button -->
+        <button class="public-qr-btn" onclick="app.showQRModal('${username}')" title="QR Code">📱</button>
+      </div>
+    `;
+
+  } catch (e) {
+    appEl.innerHTML = `
+      <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;text-align:center;padding:20px">
+        <div style="font-size:64px">⚠️</div>
+        <h1 style="font-size:28px;font-weight:800">Something Went Wrong</h1>
+        <p style="color:var(--gray)">Unable to load profile. Please try again.</p>
+        <a href="#/" class="btn btn-primary">Go Home</a>
+      </div>
+    `;
+  }
+};
+
+app.updateProfileMeta = function(profile) {
+  const title = (profile.display_name || profile.username) + ' | LINKTROO — All My Links';
+  const desc = (profile.bio || 'All my social links in one place. Created with LINKTROO — Free Bio Link Generator.');
+
+  document.title = title;
+  document.querySelector('meta[name="description"]')?.setAttribute('content', desc);
+  document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
+  document.querySelector('meta[property="og:description"]')?.setAttribute('content', desc);
+  document.querySelector('meta[property="og:url"]')?.setAttribute('content', 'https://linktroo.pages.dev/@' + profile.username);
+  if (profile.avatar_url) {
+    document.querySelector('meta[property="og:image"]')?.setAttribute('content', profile.avatar_url);
+    document.querySelector('meta[name="twitter:image"]')?.setAttribute('content', profile.avatar_url);
+  }
+};
+
+app.trackPublicClick = async function(linkId, userId) {
+  try {
+    await this.api('/api/public/click', 'POST', { link_id: linkId, user_id: userId });
+  } catch (e) {
+    // Store offline for sync
+    if ('serviceWorker' in navigator) {
+      const db = await this.openOfflineDB();
+      await db.put('pending_analytics', { id: Date.now(), link_id: linkId, user_id: userId, event_type: 'click', created_at: new Date().toISOString() });
+    }
+  }
+};
+
+app.publicSubscribe = async function(userId, email, form) {
+  try {
+    const res = await this.api('/api/public/subscribe', 'POST', { user_id: userId, email });
+    if (res.success) {
+      this.showToast('Subscribed successfully!', 'success');
+      form.reset();
+    } else {
+      this.showToast(res.error || 'Subscription failed', 'error');
+    }
+  } catch {
+    this.showToast('Network error. Please try again.', 'error');
+  }
+};
+
+app.showQRModal = function(username) {
+  const modal = document.createElement('div');
+  modal.className = 'modal-overlay active';
+  modal.innerHTML = `
+    <div class="modal" style="max-width:400px;text-align:center">
+      <div class="modal-header" style="justify-content:center">
+        <div class="modal-title">QR Code for @${username}</div>
+        <button class="modal-close" onclick="this.closest('.modal-overlay').remove()" style="position:absolute;right:24px">✕</button>
+      </div>
+      <div class="modal-body">
+        <img src="/api/qr/${username}" style="width:100%;max-width:280px;border-radius:12px" alt="QR Code">
+        <p style="color:var(--gray);font-size:14px;margin-top:16px">Scan to visit this profile</p>
+      </div>
+      <div class="modal-footer" style="justify-content:center">
+        <a href="/api/qr/${username}" download="qr-${username}.png" class="btn btn-primary">Download QR</a>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(modal);
+  modal.addEventListener('click', e => { if (e.target === modal) modal.remove(); });
+};
+
+app.openOfflineDB = function() {
+  return new Promise((resolve, reject) => {
+    const request = indexedDB.open('linktroo-offline', 1);
+    request.onerror = () => reject(request.error);
+    request.onsuccess = () => resolve(request.result);
+    request.onupgradeneeded = (event) => {
+      const db = event.target.result;
+      if (!db.objectStoreNames.contains('pending_analytics')) {
+        db.createObjectStore('pending_analytics', { keyPath: 'id' });
+      }
+    };
+  });
+};
+
+
+// ═══════════════════════════════════════════════════════════════
+// DASHBOARD
+// ═══════════════════════════════════════════════════════════════
+
+app.renderDashboard = function() {
+  const tab = this.state.dashboardTab;
+  const appEl = document.getElementById('app');
+
+  // Update main content class
+  const mainContent = document.querySelector('.main-content');
+  if (mainContent) {
+    mainContent.classList.toggle('main-content-full', !document.getElementById('sidebar')?.classList.contains('hidden'));
+  }
+
+  // Render based on tab
+  switch(tab) {
+    case 'links': this.renderLinksTab(); break;
+    case 'design': this.renderDesignTab(); break;
+    case 'analytics': this.renderAnalyticsTab(); break;
+    case 'profile': this.renderProfileTab(); break;
+    case 'social': this.renderSocialTab(); break;
+    case 'subscribers': this.renderSubscribersTab(); break;
+    case 'settings': this.renderSettingsTab(); break;
+    default: this.renderOverviewTab(); break;
+  }
+};
+
+// ─── OVERVIEW TAB ───
+app.renderOverviewTab = async function() {
+  const appEl = document.getElementById('app');
+
+  // Load stats
+  let stats = { total_views: 0, total_clicks: 0, total_links: 0, total_subscribers: 0, recent_views: 0, recent_clicks: 0, username: '', profile_url: '' };
+  let links = [];
+
+  try {
+    const [statsRes, linksRes] = await Promise.all([
+      this.api('/api/profile/stats'),
+      this.api('/api/links')
+    ]);
+    if (statsRes.success) stats = statsRes.data;
+    if (linksRes.success) links = linksRes.data.links || [];
+  } catch (e) {
+    console.error('Overview load error:', e);
+  }
+
+  this.state.links = links;
+
+  appEl.innerHTML = `
+    <div class="main-content">
+      <div class="page-header">
+        <div>
+          <h1 class="page-title">Dashboard Overview</h1>
+          <p class="page-subtitle">Welcome back, ${this.escapeHtml(this.state.user?.display_name || this.state.user?.username || 'Creator')}!</p>
+        </div>
+        <a href="${stats.profile_url || '#/@' + stats.username}" target="_blank" class="btn btn-ghost btn-sm">View Public Page ↗</a>
+      </div>
+
+      <div class="grid grid-4" style="margin-bottom:32px">
+        <div class="stat-card">
+          <div class="stat-value">${this.formatNumber(stats.total_views)}</div>
+          <div class="stat-label">Total Views</div>
+          <div class="stat-change up">↑ ${this.formatNumber(stats.recent_views)} this month</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">${this.formatNumber(stats.total_clicks)}</div>
+          <div class="stat-label">Total Clicks</div>
+          <div class="stat-change up">↑ ${this.formatNumber(stats.recent_clicks)} this month</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">${stats.total_links}</div>
+          <div class="stat-label">Active Links</div>
+          <div class="stat-change">${links.filter(l => l.is_active).length} visible</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">${stats.total_subscribers}</div>
+          <div class="stat-label">Subscribers</div>
+          <div class="stat-change up">Growing</div>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+            <h3 style="font-size:18px;font-weight:700">Quick Actions</h3>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <button class="btn btn-primary" onclick="app.showAddLinkModal()">+ Add New Link</button>
+            <button class="btn btn-dark" onclick="app.switchTab('design')">🎨 Customize Design</button>
+            <button class="btn btn-dark" onclick="app.switchTab('social')">🔗 Add Social Links</button>
+            <button class="btn btn-dark" onclick="app.copyToClipboard('${stats.profile_url || 'https://linktroo.pages.dev/@' + stats.username}')">📋 Copy Profile URL</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+            <h3 style="font-size:18px;font-weight:700">Your Profile URL</h3>
+          </div>
+          <div style="background:var(--black);border:2px solid var(--black-lighter);border-radius:var(--radius-sm);padding:16px;display:flex;align-items:center;gap:12px">
+            <span style="color:var(--gray);font-size:14px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${stats.profile_url || 'https://linktroo.pages.dev/@' + stats.username}</span>
+            <button class="btn btn-sm btn-ghost" onclick="app.copyToClipboard('${stats.profile_url || 'https://linktroo.pages.dev/@' + stats.username}')">Copy</button>
+          </div>
+          <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
+            <a href="https://twitter.com/intent/tweet?text=Check+out+my+bio+link!&url=${encodeURIComponent(stats.profile_url || '')}" target="_blank" class="btn btn-sm btn-dark">Share on X</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(stats.profile_url || '')}" target="_blank" class="btn btn-sm btn-dark">Share on FB</a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(stats.profile_url || '')}" target="_blank" class="btn btn-sm btn-dark">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:24px">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+          <h3 style="font-size:18px;font-weight:700">Recent Links</h3>
+          <button class="btn btn-sm btn-ghost" onclick="app.switchTab('links')">View All →</button>
+        </div>
+        ${links.length === 0 ? `
+          <div class="empty-state" style="padding:40px 20px">
+            <div class="empty-state-icon">🔗</div>
+            <div class="empty-state-title">No links yet</div>
+            <div class="empty-state-desc">Add your first link to get started</div>
+            <button class="btn btn-primary" onclick="app.showAddLinkModal()">Add Link</button>
+          </div>
+        ` : `
+          <div style="display:flex;flex-direction:column;gap:12px">
+            ${links.slice(0, 5).map(link => `
+              <div style="display:flex;align-items:center;gap:16px;padding:16px;background:var(--black);border-radius:var(--radius-sm);border:1px solid var(--black-lighter)">
+                <div style="width:40px;height:40px;border-radius:var(--radius-sm);background:linear-gradient(135deg,var(--pink),var(--green));display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">${link.icon || '🔗'}</div>
+                <div style="flex:1;min-width:0">
+                  <div style="font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${this.escapeHtml(link.title)}</div>
+                  <div style="font-size:12px;color:var(--gray);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${this.escapeHtml(link.url)}</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+                  <span class="badge badge-pink">${link.click_count} clicks</span>
+                  ${link.is_active ? '<span class="badge badge-green">Active</span>' : '<span class="badge" style="background:rgba(255,68,68,0.1);color:#ff4444;border:1px solid rgba(255,68,68,0.3)">Hidden</span>'}
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        `}
+      </div>
+    </div>
+  `;
+};
+
+// ─── LINKS TAB ───
+app.renderLinksTab = async function() {
+  const appEl = document.getElementById('app');
+
+  if (!this.state.links.length) {
+    try {
+      const res = await this.api('/api/links');
+      if (res.success) this.state.links = res.data.links || [];
+    } catch (e) {}
+  }
+
+  const links = this.state.links;
+
+  appEl.innerHTML = `
+    <div class="main-content">
+      <div class="page-header">
+        <div>
+          <h1 class="page-title">Link Manager</h1>
+          <p class="page-subtitle">Add, edit, reorder, and manage all your links</p>
+        </div>
+        <button class="btn btn-primary" onclick="app.showAddLinkModal()">+ Add New Link</button>
+      </div>
+
+      ${links.length === 0 ? `
+        <div class="empty-state">
+          <div class="empty-state-icon">🔗</div>
+          <div class="empty-state-title">No links yet</div>
+          <div class="empty-state-desc">Start by adding your first link. You can add unlimited links!</div>
+          <button class="btn btn-primary" onclick="app.showAddLinkModal()">Add Your First Link</button>
+        </div>
+      ` : `
+        <div style="display:flex;flex-direction:column;gap:12px" id="links-list">
+          ${links.map((link, index) => `
+            <div class="drag-item" draggable="true" data-id="${link.id}" data-index="${index}"
+                 style="display:flex;align-items:center;gap:12px;padding:16px;background:var(--black-light);border:1px solid var(--black-lighter);border-radius:var(--radius-sm);transition:var(--transition)"
+                 ondragstart="app.handleDragStart(event, '${link.id}')"
+                 ondragover="app.handleDragOver(event)"
+                 ondrop="app.handleDrop(event, '${link.id}')"
+                 ondragend="app.handleDragEnd(event)">
+              <div class="drag-handle" style="cursor:grab;padding:8px;color:var(--gray)">⋮⋮</div>
+              <div style="width:44px;height:44px;border-radius:var(--radius-sm);background:linear-gradient(135deg,var(--pink),var(--green));display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0">${link.icon || '🔗'}</div>
+              <div style="flex:1;min-width:0">
+                <div style="display:flex;align-items:center;gap:8px">
+                  <span style="font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${this.escapeHtml(link.title)}</span>
+                  ${link.is_featured ? '<span class="badge badge-gold">⭐ Featured</span>' : ''}
+                  ${link.is_priority ? '<span class="badge badge-pink">🔝 Priority</span>' : ''}
+                </div>
+                <div style="font-size:12px;color:var(--gray);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px">${this.escapeHtml(link.url)}</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+                <span style="font-size:13px;color:var(--gray)">${link.click_count} clicks</span>
+                <button class="btn btn-icon btn-dark" onclick="app.toggleLink('${link.id}')" title="${link.is_active ? 'Hide' : 'Show'}">
+                  ${link.is_active ? '👁' : '🙈'}
+                </button>
+                <button class="btn btn-icon btn-dark" onclick="app.showEditLinkModal('${link.id}')" title="Edit">✏️</button>
+                <button class="btn btn-icon btn-dark" onclick="app.deleteLink('${link.id}')" title="Delete" style="color:#ff4444">🗑</button>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `}
+    </div>
+  `;
+};
+
+// ─── DRAG & DROP ───
+app.handleDragStart = function(e, id) {
+  this.state.dragItem = id;
+  e.target.classList.add('dragging');
+  e.dataTransfer.effectAllowed = 'move';
+};
+
+app.handleDragOver = function(e) {
+  e.preventDefault();
+  e.dataTransfer.dropEffect = 'move';
+};
+
+app.handleDrop = async function(e, targetId) {
+  e.preventDefault();
+  const draggedId = this.state.dragItem;
+  if (!draggedId || draggedId === targetId) return;
+
+  const links = [...this.state.links];
+  const draggedIndex = links.findIndex(l => l.id === draggedId);
+  const targetIndex = links.findIndex(l => l.id === targetId);
+
+  if (draggedIndex === -1 || targetIndex === -1) return;
+
+  // Reorder array
+  const [removed] = links.splice(draggedIndex, 1);
+  links.splice(targetIndex, 0, removed);
+
+  // Update positions
+  const orders = links.map((l, i) => ({ id: l.id, position: i }));
+  this.state.links = links;
+
+  // Update UI
+  this.renderLinksTab();
+
+  // Save to server
+  try {
+    await this.api('/api/links/reorder', 'PUT', { orders });
+    this.showToast('Links reordered', 'success');
+  } catch {
+    this.showToast('Failed to save order', 'error');
+  }
+};
+
+app.handleDragEnd = function(e) {
+  e.target.classList.remove('dragging');
+  this.state.dragItem = null;
+};
+
+// ─── LINK CRUD ───
+app.showAddLinkModal = function() {
+  this.showLinkModal();
+};
+
+app.showEditLinkModal = function(id) {
+  const link = this.state.links.find(l => l.id === id);
+  if (!link) return;
+  this.showLinkModal(link);
+};
+
+app.showLinkModal = function(link = null) {
+  const isEdit = !!link;
+  const modal = document.createElement('div');
+  modal.className = 'modal-overlay active';
+  modal.innerHTML = `
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title">${isEdit ? 'Edit Link' : 'Add New Link'}</div>
+        <button class="modal-close" onclick="this.closest('.modal-overlay').remove()">✕</button>
+      </div>
+      <form onsubmit="event.preventDefault(); app.saveLink(this, '${link?.id || ''}');">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label">Link Title *</label>
+            <input type="text" name="title" class="form-input" placeholder="My Portfolio" required value="${this.escapeHtml(link?.title || '')}">
+          </div>
+          <div class="form-group">
+            <label class="form-label">URL *</label>
+            <input type="url" name="url" class="form-input" placeholder="https://example.com" required value="${this.escapeHtml(link?.url || '')}">
+          </div>
+          <div class="grid grid-2">
+            <div class="form-group">
+              <label class="form-label">Icon (Emoji)</label>
+              <input type="text" name="icon" class="form-input" placeholder="🔗" maxlength="2" value="${this.escapeHtml(link?.icon || '')}">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Category</label>
+              <select name="category" class="form-input form-select">
+                <option value="general" ${link?.category === 'general' ? 'selected' : ''}>General</option>
+                <option value="social" ${link?.category === 'social' ? 'selected' : ''}>Social</option>
+                <option value="shop" ${link?.category === 'shop' ? 'selected' : ''}>Shop</option>
+                <option value="content" ${link?.category === 'content' ? 'selected' : ''}>Content</option>
+                <option value="support" ${link?.category === 'support' ? 'selected' : ''}>Support</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Description</label>
+            <input type="text" name="description" class="form-input" placeholder="Brief description" value="${this.escapeHtml(link?.description || '')}">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Thumbnail URL</label>
+            <input type="url" name="thumbnail_url" class="form-input" placeholder="https://example.com/image.jpg" value="${this.escapeHtml(link?.thumbnail_url || '')}">
+          </div>
+          <div style="display:flex;gap:16px;flex-wrap:wrap">
+            <label style="display:flex;align-items:center;gap:8px;cursor:pointer">
+              <input type="checkbox" name="is_featured" ${link?.is_featured ? 'checked' : ''} style="width:18px;height:18px;accent-color:var(--pink)">
+              <span style="font-size:14px">Featured (outline style)</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:8px;cursor:pointer">
+              <input type="checkbox" name="is_priority" ${link?.is_priority ? 'checked' : ''} style="width:18px;height:18px;accent-color:var(--pink)">
+              <span style="font-size:14px">Priority (top of list)</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:8px;cursor:pointer">
+              <input type="checkbox" name="is_active" ${link?.is_active !== false ? 'checked' : ''} style="width:18px;height:18px;accent-color:var(--pink)">
+              <span style="font-size:14px">Active (visible)</span>
+            </label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" onclick="this.closest('.modal-overlay').remove()">Cancel</button>
+          <button type="submit" class="btn btn-primary">${isEdit ? 'Save Changes' : 'Add Link'}</button>
+        </div>
+      </form>
+    </div>
+  `;
+  document.body.appendChild(modal);
+  modal.addEventListener('click', e => { if (e.target === modal) modal.remove(); });
+};
+
+app.saveLink = async function(form, id) {
+  const data = {
+    title: form.title.value,
+    url: form.url.value,
+    icon: form.icon.value,
+    category: form.category.value,
+    description: form.description.value,
+    thumbnail_url: form.thumbnail_url.value,
+    is_featured: form.is_featured.checked,
+    is_priority: form.is_priority.checked,
+    is_active: form.is_active.checked
+  };
+
+  this.setLoading(true);
+  try {
+    const res = id 
+      ? await this.api('/api/links/' + id, 'PUT', data)
+      : await this.api('/api/links', 'POST', data);
+
+    if (res.success) {
+      this.showToast(id ? 'Link updated!' : 'Link created!', 'success');
+      document.querySelector('.modal-overlay')?.remove();
+      // Refresh links
+      const linksRes = await this.api('/api/links');
+      if (linksRes.success) this.state.links = linksRes.data.links || [];
+      this.renderLinksTab();
+    } else {
+      this.showToast(res.error || 'Failed to save link', 'error');
+    }
+  } catch {
+    this.showToast('Network error', 'error');
+  }
+  this.setLoading(false);
+};
+
+app.toggleLink = async function(id) {
+  try {
+    const res = await this.api('/api/links/' + id + '/toggle', 'PUT');
+    if (res.success) {
+      const link = this.state.links.find(l => l.id === id);
+      if (link) link.is_active = res.data.is_active;
+      this.renderLinksTab();
+      this.showToast(res.data.is_active ? 'Link is now visible' : 'Link is now hidden', 'success');
+    }
+  } catch {
+    this.showToast('Failed to toggle link', 'error');
+  }
+};
+
+app.deleteLink = async function(id) {
+  if (!confirm('Are you sure you want to delete this link?')) return;
+
+  try {
+    const res = await this.api('/api/links/' + id, 'DELETE');
+    if (res.success) {
+      this.state.links = this.state.links.filter(l => l.id !== id);
+      this.renderLinksTab();
+      this.showToast('Link deleted', 'success');
+    }
+  } catch {
+    this.showToast('Failed to delete link', 'error');
+  }
+};
+
+
+// ─── DESIGN TAB ───
+app.renderDesignTab = async function() {
+  const appEl = document.getElementById('app');
+
+  // Load themes if not loaded
+  if (!this.state.themes.length) {
+    try {
+      const res = await this.api('/api/themes');
+      if (res.success) this.state.themes = res.data.themes || [];
+    } catch (e) {}
+  }
+
+  const user = this.state.user || {};
+  const themes = this.state.themes;
+  const currentTheme = user.theme || 'dark';
+  const currentAccent = user.accent_color || '#ff0080';
+  const currentSecondary = user.secondary_color || '#00ff88';
+  const currentBg = user.background_value || 'linear-gradient(135deg, #0a0a0a 0%, #1a0a1a 50%, #0a1a0a 100%)';
+  const currentFont = user.font_family || 'Inter';
+  const currentBtnStyle = user.button_style || '3d';
+  const currentBtnColor = user.button_color || '#ff0080';
+
+  const presetColors = ['#ff0080', '#00ff88', '#ff00ff', '#00ccff', '#ff8800', '#9900ff', '#00ffff', '#ff6666', '#ffcc00', '#ffffff', '#ff4444', '#44ff44'];
+  const fonts = [
+    { name: 'Inter', label: 'Inter (Modern)' },
+    { name: 'Orbitron', label: 'Orbitron (Tech)' },
+    { name: 'Poppins', label: 'Poppins (Clean)' },
+    { name: 'Montserrat', label: 'Montserrat (Bold)' }
+  ];
+
+  appEl.innerHTML = `
+    <div class="main-content">
+      <div class="page-header">
+        <div>
+          <h1 class="page-title">Design & Theme</h1>
+          <p class="page-subtitle">Customize how your bio page looks</p>
+        </div>
+        <button class="btn btn-primary" onclick="app.saveTheme()">Save Changes</button>
+      </div>
+
+      <div class="grid grid-2">
+        <div>
+          <!-- Theme Selector -->
+          <div class="card" style="margin-bottom:24px">
+            <h3 style="font-size:18px;font-weight:700;margin-bottom:20px">Choose Theme</h3>
+            <div class="grid grid-2" style="gap:12px">
+              ${themes.map(t => `
+                <div class="template-card" style="background:${t.background_value};height:120px;cursor:pointer;border:3px solid ${currentTheme === t.id ? 'var(--pink)' : 'transparent'};transition:var(--transition)"
+                     onclick="app.applyTheme('${t.id}')">
+                  <div class="template-overlay">
+                    <div style="display:flex;align-items:center;gap:8px">
+                      <div style="width:12px;height:12px;border-radius:50%;background:${t.accent_color}"></div>
+                      <div class="template-name" style="color:${t.accent_color};font-size:14px">${t.name}</div>
+                    </div>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Colors -->
+          <div class="card" style="margin-bottom:24px">
+            <h3 style="font-size:18px;font-weight:700;margin-bottom:20px">Colors</h3>
+            <div class="form-group">
+              <label class="form-label">Accent Color</label>
+              <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px">
+                ${presetColors.map(c => `
+                  <div class="color-swatch ${currentAccent === c ? 'active' : ''}" style="background:${c}" onclick="app.setColor('accent', '${c}')" data-color="accent" data-value="${c}"></div>
+                `).join('')}
+                <input type="color" id="custom-accent" class="form-color" value="${currentAccent}" onchange="app.setColor('accent', this.value)">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Secondary Color</label>
+              <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px">
+                ${presetColors.map(c => `
+                  <div class="color-swatch ${currentSecondary === c ? 'active' : ''}" style="background:${c}" onclick="app.setColor('secondary', '${c}')" data-color="secondary" data-value="${c}"></div>
+                `).join('')}
+                <input type="color" id="custom-secondary" class="form-color" value="${currentSecondary}" onchange="app.setColor('secondary', this.value)">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Button Color</label>
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                ${presetColors.map(c => `
+                  <div class="color-swatch ${currentBtnColor === c ? 'active' : ''}" style="background:${c}" onclick="app.setColor('button', '${c}')" data-color="button" data-value="${c}"></div>
+                `).join('')}
+                <input type="color" id="custom-button" class="form-color" value="${currentBtnColor}" onchange="app.setColor('button', this.value)">
+              </div>
+            </div>
+          </div>
+
+          <!-- Button Style -->
+          <div class="card" style="margin-bottom:24px">
+            <h3 style="font-size:18px;font-weight:700;margin-bottom:20px">Button Style</h3>
+            <div style="display:flex;gap:12px;flex-wrap:wrap">
+              <button class="btn ${currentBtnStyle === '3d' ? 'btn-primary' : 'btn-dark'}" onclick="app.setButtonStyle('3d')">3D</button>
+              <button class="btn ${currentBtnStyle === 'rounded' ? 'btn-primary' : 'btn-dark'}" onclick="app.setButtonStyle('rounded')">Rounded</button>
+              <button class="btn ${currentBtnStyle === 'pill' ? 'btn-primary' : 'btn-dark'}" onclick="app.setButtonStyle('pill')">Pill</button>
+              <button class="btn ${currentBtnStyle === 'square' ? 'btn-primary' : 'btn-dark'}" onclick="app.setButtonStyle('square')">Square</button>
+            </div>
+          </div>
+
+          <!-- Font -->
+          <div class="card" style="margin-bottom:24px">
+            <h3 style="font-size:18px;font-weight:700;margin-bottom:20px">Font Family</h3>
+            <select class="form-input form-select" id="font-select" onchange="app.setFont(this.value)">
+              ${fonts.map(f => `<option value="${f.name}" ${currentFont === f.name ? 'selected' : ''}>${f.label}</option>`).join('')}
+            </select>
+          </div>
+
+          <!-- Background -->
+          <div class="card">
+            <h3 style="font-size:18px;font-weight:700;margin-bottom:20px">Background</h3>
+            <div class="form-group">
+              <label class="form-label">Background Type</label>
+              <select class="form-input form-select" id="bg-type" onchange="app.setBgType(this.value)">
+                <option value="gradient" ${user.background_type === 'gradient' ? 'selected' : ''}>Gradient</option>
+                <option value="solid" ${user.background_type === 'solid' ? 'selected' : ''}>Solid Color</option>
+                <option value="image" ${user.background_type === 'image' ? 'selected' : ''}>Image URL</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Background Value</label>
+              <textarea class="form-input form-textarea" id="bg-value" rows="3" placeholder="linear-gradient(135deg, #0a0a0a, #1a0a1a)">${this.escapeHtml(currentBg)}</textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Preview -->
+        <div>
+          <div class="card" style="position:sticky;top:80px">
+            <h3 style="font-size:18px;font-weight:700;margin-bottom:20px;display:flex;align-items:center;gap:8px">
+              <span>Live Preview</span>
+              <span class="badge badge-green">Real-time</span>
+            </h3>
+            <div id="design-preview" style="border-radius:var(--radius);overflow:hidden;min-height:500px;background:var(--black);border:2px solid var(--black-lighter)">
+              <iframe id="preview-frame" style="width:100%;height:500px;border:none;" srcdoc="${this.escapeHtml(this.generatePreviewHTML(user))}"></iframe>
+            </div>
+            <div style="margin-top:16px;display:flex;gap:8px">
+              <button class="btn btn-dark w-full" onclick="app.refreshPreview()">🔄 Refresh Preview</button>
+              <a href="${'https://linktroo.pages.dev/@' + (user.username || 'preview')}" target="_blank" class="btn btn-ghost w-full">Open Live →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  // Store current design state
+  this.designState = {
+    accent: currentAccent,
+    secondary: currentSecondary,
+    button: currentBtnColor,
+    buttonStyle: currentBtnStyle,
+    font: currentFont,
+    bgType: user.background_type || 'gradient',
+    bgValue: currentBg
+  };
+};
+
+app.applyTheme = function(themeId) {
+  const theme = this.state.themes.find(t => t.id === themeId);
+  if (!theme) return;
+
+  this.designState = {
+    accent: theme.accent_color,
+    secondary: theme.secondary_color,
+    button: theme.button_color,
+    buttonStyle: theme.button_style,
+    font: theme.font_family,
+    bgType: theme.background_type,
+    bgValue: theme.background_value
+  };
+
+  // Update UI
+  document.getElementById('custom-accent').value = theme.accent_color;
+  document.getElementById('custom-secondary').value = theme.secondary_color;
+  document.getElementById('custom-button').value = theme.button_color;
+  document.getElementById('font-select').value = theme.font_family;
+  document.getElementById('bg-type').value = theme.background_type;
+  document.getElementById('bg-value').value = theme.background_value;
+
+  // Update swatch active states
+  document.querySelectorAll('.color-swatch').forEach(el => {
+    el.classList.remove('active');
+    if (el.dataset.color === 'accent' && el.dataset.value === theme.accent_color) el.classList.add('active');
+    if (el.dataset.color === 'secondary' && el.dataset.value === theme.secondary_color) el.classList.add('active');
+    if (el.dataset.color === 'button' && el.dataset.value === theme.button_color) el.classList.add('active');
+  });
+
+  this.refreshPreview();
+};
+
+app.setColor = function(type, value) {
+  if (type === 'accent') this.designState.accent = value;
+  if (type === 'secondary') this.designState.secondary = value;
+  if (type === 'button') this.designState.button = value;
+
+  // Update swatch active states
+  document.querySelectorAll(`.color-swatch[data-color="${type}"]`).forEach(el => {
+    el.classList.toggle('active', el.dataset.value === value);
+  });
+
+  this.refreshPreview();
+};
+
+app.setButtonStyle = function(style) {
+  this.designState.buttonStyle = style;
+  this.refreshPreview();
+};
+
+app.setFont = function(font) {
+  this.designState.font = font;
+  this.refreshPreview();
+};
+
+app.setBgType = function(type) {
+  this.designState.bgType = type;
+};
+
+app.refreshPreview = function() {
+  const frame = document.getElementById('preview-frame');
+  if (!frame) return;
+
+  const user = { ...this.state.user, ...this.designState };
+  frame.srcdoc = this.generatePreviewHTML(user);
+};
+
+app.generatePreviewHTML = function(user) {
+  const accent = user.accent || user.accent_color || '#ff0080';
+  const secondary = user.secondary || user.secondary_color || '#00ff88';
+  const bg = user.bgValue || user.background_value || 'linear-gradient(135deg, #0a0a0a, #1a0a1a, #0a1a0a)';
+  const font = user.font || user.font_family || 'Inter';
+  const btnStyle = user.buttonStyle || user.button_style || '3d';
+  const btnColor = user.button || user.button_color || '#ff0080';
+
+  return `<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'${font}',sans-serif;background:${bg};background-size:400% 400%;animation:grad 15s ease infinite;color:#fff;min-height:100vh;padding:40px 20px;text-align:center}
+@keyframes grad{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.avatar{width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,${accent},${secondary});margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:40px;font-weight:800}
+.name{font-size:24px;font-weight:800;margin-bottom:8px}
+.bio{font-size:14px;color:rgba(255,255,255,0.7);margin-bottom:24px}
+.btn{display:block;width:100%;max-width:400px;margin:10px auto;padding:16px;background:linear-gradient(135deg,${btnColor},${this.lightenColor(btnColor, 20)});color:#fff;text-align:center;text-decoration:none;border-radius:${btnStyle === 'pill' ? '50px' : btnStyle === 'square' ? '4px' : '12px'};font-weight:600;box-shadow:0 6px 0 ${this.darkenColor(btnColor, 40)};transform:translateY(0);transition:all 0.2s}
+.btn:hover{transform:translateY(-2px)}
+.socials{display:flex;gap:16px;justify-content:center;margin-top:24px}
+.social{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;font-size:18px}
+</style>
+</head>
+<body>
+<div class="avatar">${(user.display_name || user.username || 'Y').charAt(0)}</div>
+<div class="name">${user.display_name || user.username || 'Your Name'}</div>
+<div class="bio">${user.bio || 'Your bio goes here ✨'}</div>
+<a href="#" class="btn">🔗 My Website</a>
+<a href="#" class="btn">📷 Instagram</a>
+<a href="#" class="btn">🎵 Spotify</a>
+<div class="socials">
+  <div class="social">📷</div><div class="social">🐦</div><div class="social">🎵</div>
+</div>
+</body></html>`;
+};
+
+app.lightenColor = function(hex, percent) {
+  const num = parseInt(hex.replace('#', ''), 16);
+  const amt = Math.round(2.55 * percent);
+  const R = (num >> 16) + amt;
+  const G = (num >> 8 & 0x00FF) + amt;
+  const B = (num & 0x0000FF) + amt;
+  return '#' + (0x1000000 + (R < 255 ? R < 1 ? 0 : R : 255) * 0x10000 + (G < 255 ? G < 1 ? 0 : G : 255) * 0x100 + (B < 255 ? B < 1 ? 0 : B : 255)).toString(16).slice(1);
+};
+
+app.darkenColor = function(hex, percent) {
+  const num = parseInt(hex.replace('#', ''), 16);
+  const amt = Math.round(2.55 * percent);
+  const R = (num >> 16) - amt;
+  const G = (num >> 8 & 0x00FF) - amt;
+  const B = (num & 0x0000FF) - amt;
+  return '#' + (0x1000000 + (R > 0 ? R : 0) * 0x10000 + (G > 0 ? G : 0) * 0x100 + (B > 0 ? B : 0)).toString(16).slice(1);
+};
+
+app.saveTheme = async function() {
+  const bgValue = document.getElementById('bg-value')?.value || this.designState.bgValue;
+
+  const data = {
+    accent_color: this.designState.accent,
+    secondary_color: this.designState.secondary,
+    button_color: this.designState.button,
+    button_style: this.designState.buttonStyle,
+    font_family: this.designState.font,
+    background_type: this.designState.bgType,
+    background_value: bgValue
+  };
+
+  this.setLoading(true);
+  try {
+    const res = await this.api('/api/profile/theme', 'PUT', data);
+    if (res.success) {
+      // Update local user
+      if (this.state.user) {
+        Object.assign(this.state.user, data);
+        localStorage.setItem('linktroo_user', JSON.stringify(this.state.user));
+      }
+      this.showToast('Theme saved successfully!', 'success');
+    } else {
+      this.showToast(res.error || 'Failed to save theme', 'error');
+    }
+  } catch {
+    this.showToast('Network error', 'error');
+  }
+  this.setLoading(false);
+};
+
+// ─── ANALYTICS TAB ───
+app.renderAnalyticsTab = async function() {
+  const appEl = document.getElementById('app');
+
+  let overview = { daily_views: [], daily_clicks: [], countries: [], devices: [], browsers: [] };
+  let linkStats = { links: [] };
+  let traffic = { referrers: [], utm_sources: [] };
+  let geo = { geo: [] };
+
+  try {
+    const [overviewRes, linksRes, trafficRes, geoRes] = await Promise.all([
+      this.api('/api/analytics/overview'),
+      this.api('/api/analytics/links'),
+      this.api('/api/analytics/traffic'),
+      this.api('/api/analytics/geo')
+    ]);
+    if (overviewRes.success) overview = overviewRes.data;
+    if (linksRes.success) linkStats = linksRes.data;
+    if (trafficRes.success) traffic = trafficRes.data;
+    if (geoRes.success) geo = geoRes.data;
+  } catch (e) {}
+
+  appEl.innerHTML = `
+    <div class="main-content">
+      <div class="page-header">
+        <div>
+          <h1 class="page-title">Analytics</h1>
+          <p class="page-subtitle">Track your performance and audience</p>
+        </div>
+        <button class="btn btn-ghost btn-sm" onclick="app.exportAnalytics()">📊 Export Data</button>
+      </div>
+
+      <div class="grid grid-4" style="margin-bottom:32px">
+        <div class="stat-card">
+          <div class="stat-value">${overview.daily_views.reduce((a, b) => a + (b.count || 0), 0)}</div>
+          <div class="stat-label">7-Day Views</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">${overview.daily_clicks.reduce((a, b) => a + (b.count || 0), 0)}</div>
+          <div class="stat-label">7-Day Clicks</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">${overview.countries.length}</div>
+          <div class="stat-label">Countries</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">${overview.devices.length}</div>
+          <div class="stat-label">Device Types</div>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <!-- Views Chart -->
+        <div class="card">
+          <h3 style="font-size:18px;font-weight:700;margin-bottom:20px">Views (Last 7 Days)</h3>
+          ${this.renderBarChart(overview.daily_views, 'var(--pink)')}
+        </div>
+
+        <!-- Clicks Chart -->
+        <div class="card">
+          <h3 style="font-size:18px;font-weight:700;margin-bottom:20px">Clicks (Last 7 Days)</h3>
+          ${this.renderBarChart(overview.daily_clicks, 'var(--green)')}
+        </div>
+
+        <!-- Top Links -->
+        <div class="card">
+          <h3 style="font-size:18px;font-weight:700;margin-bottom:20px">Top Performing Links</h3>
+          ${linkStats.links.length === 0 ? '<p style="color:var(--gray);font-size:14px">No click data yet</p>' : `
+            <div style="display:flex;flex-direction:column;gap:12px">
+              ${linkStats.links.slice(0, 8).map(l => `
+                <div style="display:flex;align-items:center;gap:12px">
+                  <div style="flex:1;min-width:0">
+                    <div style="font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px">${this.escapeHtml(l.title)}</div>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+                    <div style="width:100px;height:8px;background:var(--black-lighter);border-radius:4px;overflow:hidden">
+                      <div style="width:${Math.min((l.analytics_clicks / Math.max(...linkStats.links.map(x => x.analytics_clicks || 1))) * 100, 100)}%;height:100%;background:linear-gradient(90deg,var(--pink),var(--green));border-radius:4px"></div>
+                    </div>
+                    <span style="font-size:13px;color:var(--gray);min-width:40px;text-align:right">${l.analytics_clicks || 0}</span>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          `}
+        </div>
+
+        <!-- Countries -->
+        <div class="card">
+          <h3 style="font-size:18px;font-weight:700;margin-bottom:20px">Top Countries</h3>
+          ${overview.countries.length === 0 ? '<p style="color:var(--gray);font-size:14px">No geographic data yet</p>' : `
+            <div style="display:flex;flex-direction:column;gap:12px">
+              ${overview.countries.slice(0, 10).map(c => `
+                <div style="display:flex;align-items:center;gap:12px">
+                  <span style="font-size:20px">${this.getCountryFlag(c.country)}</span>
+                  <div style="flex:1;min-width:0">
+                    <div style="font-weight:600;font-size:14px">${this.escapeHtml(c.country)}</div>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+                    <div style="width:80px;height:8px;background:var(--black-lighter);border-radius:4px;overflow:hidden">
+                      <div style="width:${Math.min((c.count / Math.max(...overview.countries.map(x => x.count || 1))) * 100, 100)}%;height:100%;background:var(--pink);border-radius:4px"></div>
+                    </div>
+                    <span style="font-size:13px;color:var(--gray);min-width:40px;text-align:right">${c.count}</span>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          `}
+        </div>
+
+        <!-- Devices -->
+        <div class="card">
+          <h3 style="font-size:18px;font-weight:700;margin-bottom:20px">Devices</h3>
+          ${overview.devices.length === 0 ? '<p style="color:var(--gray);font-size:14px">No device data yet</p>' : `
+            <div style="display:flex;flex-direction:column;gap:12px">
+              ${overview.devices.map(d => `
+                <div style="display:flex;align-items:center;gap:12px">
+                  <span style="font-size:20px">${d.device === 'mobile' ? '📱' : d.device === 'tablet' ? '💻' : '🖥️'}</span>
+                  <div style="flex:1;min-width:0">
+                    <div style="font-weight:600;font-size:14px;text-transform:capitalize">${d.device}</div>
+                  </div>
+                  <span class="badge badge-pink">${d.count}</span>
+                </div>
+              `).join('')}
+            </div>
+          `}
+        </div>
+
+        <!-- Browsers -->
+        <div class="card">
+          <h3 style="font-size:18px;font-weight:700;margin-bottom:20px">Browsers</h3>
+          ${overview.browsers.length === 0 ? '<p style="color:var(--gray);font-size:14px">No browser data yet</p>' : `
+            <div style="display:flex;flex-direction:column;gap:12px">
+              ${overview.browsers.map(b => `
+                <div style="display:flex;align-items:center;gap:12px">
+                  <span style="font-size:20px">${b.browser === 'Chrome' ? '🔵' : b.browser === 'Firefox' ? '🟠' : b.browser === 'Safari' ? '🔴' : b.browser === 'Edge' ? '🔷' : '🌐'}</span>
+                  <div style="flex:1;min-width:0">
+                    <div style="font-weight:600;font-size:14px">${b.browser}</div>
+                  </div>
+                  <span class="badge badge-green">${b.count}</span>
+                </div>
+              `).join('')}
+            </div>
+          `}
+        </div>
+
+        <!-- Traffic Sources -->
+        <div class="card" style="grid-column:1 / -1">
+          <h3 style="font-size:18px;font-weight:700;margin-bottom:20px">Traffic Sources</h3>
+          ${traffic.referrers.length === 0 ? '<p style="color:var(--gray);font-size:14px">No referrer data yet</p>' : `
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+              ${traffic.referrers.slice(0, 20).map(r => `
+                <span class="badge badge-pink">${this.escapeHtml(r.referrer === 'direct' ? 'Direct' : r.referrer)}: ${r.count}</span>
+              `).join('')}
+            </div>
+          `}
+        </div>
+      </div>
+    </div>
+  `;
+};
+
+app.renderBarChart = function(data, color) {
+  if (!data || data.length === 0) {
+    return '<p style="color:var(--gray);font-size:14px">No data available yet</p>';
+  }
+
+  const maxVal = Math.max(...data.map(d => d.count || 0), 1);
+  const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+  return `
+    <div style="display:flex;align-items:flex-end;gap:8px;height:200px;padding-bottom:30px;position:relative">
+      ${data.map(d => {
+        const date = new Date(d.date);
+        const dayName = days[date.getDay()];
+        const height = Math.max((d.count / maxVal) * 100, 5);
+        return `
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;position:relative">
+            <div style="width:100%;background:${color};border-radius:6px 6px 0 0;transition:height 0.5s ease;height:${height}%;opacity:0.8;min-height:4px"></div>
+            <span style="font-size:11px;color:var(--gray);position:absolute;bottom:-24px;white-space:nowrap">${dayName}</span>
+            <span style="font-size:11px;color:var(--gray);font-weight:600">${d.count}</span>
+          </div>
+        `;
+      }).join('')}
+    </div>
+  `;
+};
+
+app.getCountryFlag = function(country) {
+  const flags = {
+    'US': '🇺🇸', 'GB': '🇬🇧', 'CA': '🇨🇦', 'AU': '🇦🇺', 'DE': '🇩🇪', 'FR': '🇫🇷', 'IN': '🇮🇳',
+    'JP': '🇯🇵', 'BR': '🇧🇷', 'MX': '🇲🇽', 'RU': '🇷🇺', 'CN': '🇨🇳', 'KR': '🇰🇷', 'IT': '🇮🇹',
+    'ES': '🇪🇸', 'NL': '🇳🇱', 'SE': '🇸🇪', 'NO': '🇳🇴', 'DK': '🇩🇰', 'FI': '🇫🇮', 'PL': '🇵🇱',
+    'TR': '🇹🇷', 'SA': '🇸🇦', 'AE': '🇦🇪', 'ID': '🇮🇩', 'TH': '🇹🇭', 'VN': '🇻🇳', 'PH': '🇵🇭',
+    'MY': '🇲🇾', 'SG': '🇸🇬', 'PK': '🇵🇰', 'BD': '🇧🇩', 'NG': '🇳🇬', 'ZA': '🇿🇦', 'EG': '🇪🇬',
+    'KE': '🇰🇪', 'GH': '🇬🇭', 'Unknown': '🌍'
+  };
+  return flags[country] || '🌍';
+};
+
+app.exportAnalytics = function() {
+  this.showToast('Export feature coming soon!', 'info');
+};
+
+
+// ─── PROFILE TAB ───
+app.renderProfileTab = async function() {
+  const appEl = document.getElementById('app');
+
+  if (!this.state.user) {
+    try {
+      const res = await this.api('/api/auth/me');
+      if (res.success) this.state.user = res.data.user;
+    } catch (e) {}
+  }
+
+  const user = this.state.user || {};
+
+  appEl.innerHTML = `
+    <div class="main-content">
+      <div class="page-header">
+        <div>
+          <h1 class="page-title">Profile Settings</h1>
+          <p class="page-subtitle">Update your public profile information</p>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 style="font-size:18px;font-weight:700;margin-bottom:20px">Basic Information</h3>
+          <form onsubmit="event.preventDefault(); app.saveProfile(this);">
+            <div class="form-group">
+              <label class="form-label">Display Name</label>
+              <input type="text" name="display_name" class="form-input" value="${this.escapeHtml(user.display_name || '')}" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Bio</label>
+              <textarea name="bio" class="form-input form-textarea" rows="4" placeholder="Tell people about yourself...">${this.escapeHtml(user.bio || '')}</textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Avatar URL</label>
+              <input type="url" name="avatar_url" class="form-input" placeholder="https://example.com/avatar.jpg" value="${this.escapeHtml(user.avatar_url || '')}">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Meta Title (SEO)</label>
+              <input type="text" name="meta_title" class="form-input" placeholder="Your Name | All My Links" value="${this.escapeHtml(user.meta_title || '')}">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Meta Description (SEO)</label>
+              <textarea name="meta_description" class="form-input form-textarea" rows="2" placeholder="Description for search engines...">${this.escapeHtml(user.meta_description || '')}</textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Save Profile</button>
+          </form>
+        </div>
+
+        <div>
+          <div class="card" style="margin-bottom:24px">
+            <h3 style="font-size:18px;font-weight:700;margin-bottom:20px">Profile Preview</h3>
+            <div style="text-align:center;padding:32px;background:var(--black);border-radius:var(--radius-sm);border:1px solid var(--black-lighter)">
+              ${user.avatar_url ? 
+                `<img src="${this.escapeHtml(user.avatar_url)}" style="width:100px;height:100px;border-radius:50%;object-fit:cover;margin-bottom:16px;border:3px solid var(--pink)">` :
+                `<div style="width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--green));margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:40px;font-weight:800">${(user.display_name || user.username || 'Y').charAt(0)}</div>`
+              }
+              <div style="font-size:20px;font-weight:700">${this.escapeHtml(user.display_name || user.username || 'Your Name')}</div>
+              <div style="color:var(--gray);font-size:14px;margin-top:4px">@${this.escapeHtml(user.username || 'username')}</div>
+              ${user.bio ? `<p style="color:var(--gray);font-size:14px;margin-top:12px;max-width:300px;margin-left:auto;margin-right:auto">${this.escapeHtml(user.bio)}</p>` : ''}
+              <a href="${'https://linktroo.pages.dev/@' + user.username}" target="_blank" class="btn btn-ghost btn-sm" style="margin-top:16px">View Live Page →</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 style="font-size:18px;font-weight:700;margin-bottom:20px">Account Info</h3>
+            <div style="display:flex;flex-direction:column;gap:16px">
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:var(--black);border-radius:var(--radius-sm)">
+                <span style="color:var(--gray);font-size:14px">Username</span>
+                <span style="font-weight:600">@${this.escapeHtml(user.username || '')}</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:var(--black);border-radius:var(--radius-sm)">
+                <span style="color:var(--gray);font-size:14px">Email</span>
+                <span style="font-weight:600">${this.escapeHtml(user.email || '')}</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:var(--black);border-radius:var(--radius-sm)">
+                <span style="color:var(--gray);font-size:14px">Member Since</span>
+                <span style="font-weight:600">${user.created_at ? new Date(user.created_at).toLocaleDateString() : 'N/A'}</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:var(--black);border-radius:var(--radius-sm)">
+                <span style="color:var(--gray);font-size:14px">Profile URL</span>
+                <button class="btn btn-sm btn-ghost" onclick="app.copyToClipboard('https://linktroo.pages.dev/@${user.username}')">Copy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+};
+
+app.saveProfile = async function(form) {
+  const data = {
+    display_name: form.display_name.value,
+    bio: form.bio.value,
+    avatar_url: form.avatar_url.value,
+    meta_title: form.meta_title.value,
+    meta_description: form.meta_description.value
+  };
+
+  this.setLoading(true);
+  try {
+    const res = await this.api('/api/profile', 'PUT', data);
+    if (res.success) {
+      Object.assign(this.state.user, data);
+      localStorage.setItem('linktroo_user', JSON.stringify(this.state.user));
+      this.showToast('Profile saved!', 'success');
+    } else {
+      this.showToast(res.error || 'Failed to save', 'error');
+    }
+  } catch {
+    this.showToast('Network error', 'error');
+  }
+  this.setLoading(false);
+};
+
+// ─── SOCIAL LINKS TAB ───
+app.renderSocialTab = async function() {
+  const appEl = document.getElementById('app');
+
+  if (!this.state.socialLinks.length) {
+    try {
+      const res = await this.api('/api/social');
+      if (res.success) this.state.socialLinks = res.data.social_links || [];
+    } catch (e) {}
+  }
+
+  const socials = this.state.socialLinks;
+  const platforms = [
+    'instagram', 'twitter', 'x', 'tiktok', 'youtube', 'facebook',
+    'linkedin', 'github', 'twitch', 'discord', 'telegram', 'whatsapp',
+    'snapchat', 'pinterest', 'spotify', 'soundcloud', 'medium', 'reddit'
+  ];
+  const platformIcons = {
+    instagram: '📷', twitter: '🐦', x: '𝕏', tiktok: '🎵', youtube: '▶️',
+    facebook: '👍', linkedin: '💼', github: '💻', twitch: '📺',
+    discord: '💬', telegram: '✈️', whatsapp: '💬', snapchat: '👻',
+    pinterest: '📌', spotify: '🎵', soundcloud: '☁️', medium: '📝', reddit: '🔴'
+  };
+
+  appEl.innerHTML = `
+    <div class="main-content">
+      <div class="page-header">
+        <div>
+          <h1 class="page-title">Social Links</h1>
+          <p class="page-subtitle">Connect all your social media accounts</p>
+        </div>
+        <button class="btn btn-primary" onclick="app.showAddSocialModal()">+ Add Social</button>
+      </div>
+
+      ${socials.length === 0 ? `
+        <div class="empty-state">
+          <div class="empty-state-icon">🌐</div>
+          <div class="empty-state-title">No social links yet</div>
+          <div class="empty-state-desc">Add your social media profiles to show them on your bio page</div>
+          <button class="btn btn-primary" onclick="app.showAddSocialModal()">Add Social Link</button>
+        </div>
+      ` : `
+        <div class="grid grid-3">
+          ${socials.map(s => `
+            <div class="card" style="display:flex;align-items:center;gap:16px">
+              <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--green));display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0">
+                ${s.custom_icon || platformIcons[s.platform] || '🔗'}
+              </div>
+              <div style="flex:1;min-width:0">
+                <div style="font-weight:700;text-transform:capitalize">${s.platform}</div>
+                <div style="font-size:12px;color:var(--gray);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${this.escapeHtml(s.url)}</div>
+              </div>
+              <div style="display:flex;gap:8px;flex-shrink:0">
+                <button class="btn btn-icon btn-dark" onclick="app.showEditSocialModal('${s.id}')" title="Edit">✏️</button>
+                <button class="btn btn-icon btn-dark" onclick="app.deleteSocial('${s.id}')" title="Delete" style="color:#ff4444">🗑</button>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `}
+    </div>
+  `;
+};
+
+app.showAddSocialModal = function() {
+  this.showSocialModal();
+};
+
+app.showEditSocialModal = function(id) {
+  const social = this.state.socialLinks.find(s => s.id === id);
+  if (!social) return;
+  this.showSocialModal(social);
+};
+
+app.showSocialModal = function(social = null) {
+  const isEdit = !!social;
+  const platforms = [
+    'instagram', 'twitter', 'x', 'tiktok', 'youtube', 'facebook',
+    'linkedin', 'github', 'twitch', 'discord', 'telegram', 'whatsapp',
+    'snapchat', 'pinterest', 'spotify', 'soundcloud', 'medium', 'reddit'
+  ];
+
+  const modal = document.createElement('div');
+  modal.className = 'modal-overlay active';
+  modal.innerHTML = `
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title">${isEdit ? 'Edit Social Link' : 'Add Social Link'}</div>
+        <button class="modal-close" onclick="this.closest('.modal-overlay').remove()">✕</button>
+      </div>
+      <form onsubmit="event.preventDefault(); app.saveSocial(this, '${social?.id || ''}');">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label">Platform</label>
+            <select name="platform" class="form-input form-select" required ${isEdit ? 'disabled' : ''}>
+              ${platforms.map(p => `<option value="${p}" ${social?.platform === p ? 'selected' : ''}>${p.charAt(0).toUpperCase() + p.slice(1)}</option>`).join('')}
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Profile URL</label>
+            <input type="url" name="url" class="form-input" placeholder="https://instagram.com/yourname" required value="${this.escapeHtml(social?.url || '')}">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Custom Icon (Emoji, optional)</label>
+            <input type="text" name="custom_icon" class="form-input" placeholder="📷" maxlength="2" value="${this.escapeHtml(social?.custom_icon || '')}">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" onclick="this.closest('.modal-overlay').remove()">Cancel</button>
+          <button type="submit" class="btn btn-primary">${isEdit ? 'Save' : 'Add'}</button>
+        </div>
+      </form>
+    </div>
+  `;
+  document.body.appendChild(modal);
+  modal.addEventListener('click', e => { if (e.target === modal) modal.remove(); });
+};
+
+app.saveSocial = async function(form, id) {
+  const data = {
+    platform: form.platform.value,
+    url: form.url.value,
+    custom_icon: form.custom_icon.value
+  };
+
+  try {
+    const res = id
+      ? await this.api('/api/social/' + id, 'PUT', data)
+      : await this.api('/api/social', 'POST', data);
+
+    if (res.success) {
+      this.showToast(id ? 'Social link updated!' : 'Social link added!', 'success');
+      document.querySelector('.modal-overlay')?.remove();
+      const socialRes = await this.api('/api/social');
+      if (socialRes.success) this.state.socialLinks = socialRes.data.social_links || [];
+      this.renderSocialTab();
+    } else {
+      this.showToast(res.error || 'Failed to save', 'error');
+    }
+  } catch {
+    this.showToast('Network error', 'error');
+  }
+};
+
+app.deleteSocial = async function(id) {
+  if (!confirm('Delete this social link?')) return;
+  try {
+    const res = await this.api('/api/social/' + id, 'DELETE');
+    if (res.success) {
+      this.state.socialLinks = this.state.socialLinks.filter(s => s.id !== id);
+      this.renderSocialTab();
+      this.showToast('Deleted', 'success');
+    }
+  } catch {
+    this.showToast('Failed to delete', 'error');
+  }
+};
+
+// ─── SUBSCRIBERS TAB ───
+app.renderSubscribersTab = async function() {
+  const appEl = document.getElementById('app');
+
+  if (!this.state.subscribers.length) {
+    try {
+      const res = await this.api('/api/subscribers');
+      if (res.success) this.state.subscribers = res.data.subscribers || [];
+    } catch (e) {}
+  }
+
+  const subs = this.state.subscribers;
+
+  appEl.innerHTML = `
+    <div class="main-content">
+      <div class="page-header">
+        <div>
+          <h1 class="page-title">Email Subscribers</h1>
+          <p class="page-subtitle">People who subscribed to your updates</p>
+        </div>
+        <span class="badge badge-pink">${subs.length} Total</span>
+      </div>
+
+      ${subs.length === 0 ? `
+        <div class="empty-state">
+          <div class="empty-state-icon">📧</div>
+          <div class="empty-state-title">No subscribers yet</div>
+          <div class="empty-state-desc">Your subscribers will appear here once people sign up on your bio page</div>
+        </div>
+      ` : `
+        <div class="card">
+          <div style="display:flex;flex-direction:column;gap:1px;background:var(--black-lighter);border-radius:var(--radius-sm);overflow:hidden">
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:16px;padding:16px;background:var(--black-light);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--gray)">
+              <span>Email</span>
+              <span>Name</span>
+              <span>Subscribed</span>
+              <span></span>
+            </div>
+            ${subs.map(s => `
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:16px;padding:16px;background:var(--black-light);align-items:center">
+                <span style="font-size:14px;overflow:hidden;text-overflow:ellipsis">${this.escapeHtml(s.email)}</span>
+                <span style="font-size:14px;color:var(--gray)">${this.escapeHtml(s.name || '—')}</span>
+                <span style="font-size:13px;color:var(--gray)">${new Date(s.subscribed_at).toLocaleDateString()}</span>
+                <button class="btn btn-sm btn-dark" onclick="app.deleteSubscriber('${s.id}')" style="color:#ff4444">Remove</button>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `}
+    </div>
+  `;
+};
+
+app.deleteSubscriber = async function(id) {
+  if (!confirm('Remove this subscriber?')) return;
+  try {
+    const res = await this.api('/api/subscribers/' + id, 'DELETE');
+    if (res.success) {
+      this.state.subscribers = this.state.subscribers.filter(s => s.id !== id);
+      this.renderSubscribersTab();
+      this.showToast('Subscriber removed', 'success');
+    }
+  } catch {
+    this.showToast('Failed to remove', 'error');
+  }
+};
+
+// ─── SETTINGS TAB ───
+app.renderSettingsTab = function() {
+  const appEl = document.getElementById('app');
+  const user = this.state.user || {};
+
+  appEl.innerHTML = `
+    <div class="main-content">
+      <div class="page-header">
+        <div>
+          <h1 class="page-title">Account Settings</h1>
+          <p class="page-subtitle">Manage your account preferences</p>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 style="font-size:18px;font-weight:700;margin-bottom:20px">Danger Zone</h3>
+          <div style="padding:20px;background:rgba(255,68,68,0.05);border:1px solid rgba(255,68,68,0.2);border-radius:var(--radius-sm)">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <div>
+                <div style="font-weight:700;color:#ff4444">Delete Account</div>
+                <div style="font-size:13px;color:var(--gray);margin-top:4px">This will permanently delete your account and all data</div>
+              </div>
+              <button class="btn btn-sm" style="background:rgba(255,68,68,0.2);color:#ff4444;border:1px solid rgba(255,68,68,0.3)" onclick="app.deleteAccount()">Delete</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="font-size:18px;font-weight:700;margin-bottom:20px">App Info</h3>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:var(--black);border-radius:var(--radius-sm)">
+              <span style="color:var(--gray);font-size:14px">App Version</span>
+              <span style="font-weight:600">1.0.0</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:var(--black);border-radius:var(--radius-sm)">
+              <span style="color:var(--gray);font-size:14px">Platform</span>
+              <span style="font-weight:600">Cloudflare Edge</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:var(--black);border-radius:var(--radius-sm)">
+              <span style="color:var(--gray);font-size:14px">Status</span>
+              <span style="font-weight:600;color:var(--green)">● Online</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+};
+
+app.deleteAccount = async function() {
+  if (!confirm('⚠️ WARNING: This will permanently delete your account, all links, analytics, and subscribers. This action cannot be undone.\n\nType "DELETE" to confirm:')) return;
+
+  const confirmText = prompt('Type "DELETE" to permanently delete your account:');
+  if (confirmText !== 'DELETE') {
+    this.showToast('Account deletion cancelled', 'info');
+    return;
+  }
+
+  this.showToast('Account deletion is handled via admin. Please contact support.', 'info');
+};
+
+
+// ═══════════════════════════════════════════════════════════════
+// APP INITIALIZATION
+// ═══════════════════════════════════════════════════════════════
+
+// Initialize app when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+  app.init();
+});
+
+// Handle online/offline
+window.addEventListener('online', () => {
+  app.showToast('You are back online!', 'success');
+});
+window.addEventListener('offline', () => {
+  app.showToast('You are offline. Changes will sync when connected.', 'info');
+});
+
+// Keyboard shortcuts
+document.addEventListener('keydown', (e) => {
+  // Escape to close modals
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal-overlay').forEach(m => m.remove());
+  }
+  // Ctrl/Cmd + K to focus search (future feature)
+  if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+    e.preventDefault();
+  }
+});
+
+// Prevent form resubmission on refresh
+if (window.history.replaceState) {
+  window.history.replaceState(null, null, window.location.href);
+}
+
+</script>
+</body>
+</html>
